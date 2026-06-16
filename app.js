@@ -88,6 +88,10 @@ function renderBanter(rows, teams) {
   const leader = rows[0];
   const last = rows[rows.length - 1];
 
+  const leaderGames = leader.games ?? leader.played ?? leader.codes.reduce((sum, code) => {
+    return sum + (teams[code]?.played || 0);
+  }, 0);
+
   const leaderBest = leader.codes
     .map(c => ({ code: c, goals: gf(teams[c]) }))
     .sort((a, b) => b.goals - a.goals)[0];
@@ -113,7 +117,7 @@ function renderBanter(rows, teams) {
 
   const lines = [
     `${teamCell(leaderBest.code, teams)} is currently doing the heavy lifting for ${leader.name}.`,
-    `${leader.name} leads the Golden Boot race with ${leader.goals} goals from ${leader.played} games.`,
+    `${leader.name} leads the Golden Boot race with ${leader.goals} goals from ${leaderGames} games.`,
     biggestCarry
       ? `${biggestCarry.name} is relying on ${teamCell(biggestCarry.code, teams)} for ${biggestCarry.share}% of their goals.`
       : `Nobody has enough goals to start acting smug yet.`,
