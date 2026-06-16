@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T00:08:24.756Z",
+  "generatedAt": "2026-06-16T00:25:33.696Z",
   "source": "fallback-in-repo",
   "sourceOk": false,
   "matches": [
@@ -11,7 +11,7 @@
       "awayGoals": 0,
       "status": "FINISHED",
       "utcDate": null,
-      "group": null
+      "group": "A"
     },
     {
       "id": "fallback-2",
@@ -21,7 +21,7 @@
       "awayGoals": 1,
       "status": "FINISHED",
       "utcDate": null,
-      "group": null
+      "group": "A"
     },
     {
       "id": "fallback-3",
@@ -31,7 +31,7 @@
       "awayGoals": 1,
       "status": "FINISHED",
       "utcDate": null,
-      "group": null
+      "group": "B"
     },
     {
       "id": "fallback-4",
@@ -41,7 +41,7 @@
       "awayGoals": 1,
       "status": "FINISHED",
       "utcDate": null,
-      "group": null
+      "group": "D"
     },
     {
       "id": "fallback-5",
@@ -51,7 +51,7 @@
       "awayGoals": 1,
       "status": "FINISHED",
       "utcDate": null,
-      "group": null
+      "group": "B"
     },
     {
       "id": "fallback-6",
@@ -61,7 +61,7 @@
       "awayGoals": 1,
       "status": "FINISHED",
       "utcDate": null,
-      "group": null
+      "group": "C"
     },
     {
       "id": "fallback-7",
@@ -71,7 +71,7 @@
       "awayGoals": 1,
       "status": "FINISHED",
       "utcDate": null,
-      "group": null
+      "group": "C"
     },
     {
       "id": "fallback-8",
@@ -81,7 +81,7 @@
       "awayGoals": 0,
       "status": "FINISHED",
       "utcDate": null,
-      "group": null
+      "group": "D"
     },
     {
       "id": "fallback-9",
@@ -91,7 +91,7 @@
       "awayGoals": 1,
       "status": "FINISHED",
       "utcDate": null,
-      "group": null
+      "group": "E"
     },
     {
       "id": "fallback-10",
@@ -101,7 +101,7 @@
       "awayGoals": 2,
       "status": "FINISHED",
       "utcDate": null,
-      "group": null
+      "group": "F"
     },
     {
       "id": "fallback-11",
@@ -111,7 +111,7 @@
       "awayGoals": 0,
       "status": "FINISHED",
       "utcDate": null,
-      "group": null
+      "group": "E"
     },
     {
       "id": "fallback-12",
@@ -121,7 +121,7 @@
       "awayGoals": 1,
       "status": "FINISHED",
       "utcDate": null,
-      "group": null
+      "group": "F"
     },
     {
       "id": "fallback-13",
@@ -131,7 +131,7 @@
       "awayGoals": 0,
       "status": "FINISHED",
       "utcDate": null,
-      "group": null
+      "group": "H"
     },
     {
       "id": "fallback-14",
@@ -141,7 +141,7 @@
       "awayGoals": 1,
       "status": "FINISHED",
       "utcDate": null,
-      "group": null
+      "group": "G"
     }
   ],
   "teams": {

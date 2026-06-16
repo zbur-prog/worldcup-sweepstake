@@ -1,28 +1,436 @@
 {
   "players": [
-    {"player":"Johnny","tier1":{"name":"Morocco","flag":"🇲🇦","code":"MAR"},"tier2":{"name":"Paraguay","flag":"🇵🇾","code":"PAR"},"tier3":{"name":"Curaçao","flag":"🇨🇼","code":"CUW"}},
-    {"player":"Antoinette","tier1":{"name":"Netherlands","flag":"🇳🇱","code":"NED"},"tier2":{"name":"Senegal","flag":"🇸🇳","code":"SEN"},"tier3":{"name":"Saudi Arabia","flag":"🇸🇦","code":"KSA"}},
-    {"player":"Alex","tier1":{"name":"Croatia","flag":"🇭🇷","code":"CRO"},"tier2":{"name":"DR Congo","flag":"🇨🇩","code":"COD"},"tier3":{"name":"New Zealand","flag":"🇳🇿","code":"NZL"}},
-    {"player":"Mena","tier1":{"name":"Portugal","flag":"🇵🇹","code":"POR"},"tier2":{"name":"Panama","flag":"🇵🇦","code":"PAN"},"tier3":{"name":"Iraq","flag":"🇮🇶","code":"IRQ"}},
-    {"player":"Santi","tier1":{"name":"Colombia","flag":"🇨🇴","code":"COL"},"tier2":{"name":"Australia","flag":"🇦🇺","code":"AUS"},"tier3":{"name":"Saudi Arabia","flag":"🇸🇦","code":"KSA"}},
-    {"player":"Yasmeena","tier1":{"name":"France","flag":"🇫🇷","code":"FRA"},"tier2":{"name":"Austria","flag":"🇦🇹","code":"AUT"},"tier3":{"name":"Bosnia & Herzegovina","flag":"🇧🇦","code":"BIH"}},
-    {"player":"Ricky","tier1":{"name":"Netherlands","flag":"🇳🇱","code":"NED"},"tier2":{"name":"Scotland","flag":"🏴","code":"SCO"},"tier3":{"name":"Ghana","flag":"🇬🇭","code":"GHA"}},
-    {"player":"Ziad","tier1":{"name":"England","flag":"🏴","code":"ENG"},"tier2":{"name":"Mexico","flag":"🇲🇽","code":"MEX"},"tier3":{"name":"Uzbekistan","flag":"🇺🇿","code":"UZB"}},
-    {"player":"Emma","tier1":{"name":"Argentina","flag":"🇦🇷","code":"ARG"},"tier2":{"name":"South Korea","flag":"🇰🇷","code":"KOR"},"tier3":{"name":"Jordan","flag":"🇯🇴","code":"JOR"}},
-    {"player":"Jazzy","tier1":{"name":"England","flag":"🏴","code":"ENG"},"tier2":{"name":"Tunisia","flag":"🇹🇳","code":"TUN"},"tier3":{"name":"South Africa","flag":"🇿🇦","code":"RSA"}},
-    {"player":"Ruby","tier1":{"name":"Germany","flag":"🇩🇪","code":"GER"},"tier2":{"name":"Algeria","flag":"🇩🇿","code":"DZA"},"tier3":{"name":"Haiti","flag":"🇭🇹","code":"HTI"}},
-    {"player":"Teigan","tier1":{"name":"Croatia","flag":"🇭🇷","code":"CRO"},"tier2":{"name":"Japan","flag":"🇯🇵","code":"JPN"},"tier3":{"name":"Ghana","flag":"🇬🇭","code":"GHA"}},
-    {"player":"Nadine","tier1":{"name":"Argentina","flag":"🇦🇷","code":"ARG"},"tier2":{"name":"Norway","flag":"🇳🇴","code":"NOR"},"tier3":{"name":"Cape Verde","flag":"🇨🇻","code":"CPV"}},
-    {"player":"Vako","tier1":{"name":"Belgium","flag":"🇧🇪","code":"BEL"},"tier2":{"name":"Türkiye","flag":"🇹🇷","code":"TUR"},"tier3":{"name":"South Africa","flag":"🇿🇦","code":"RSA"}},
-    {"player":"Andre","tier1":{"name":"Brazil","flag":"🇧🇷","code":"BRA"},"tier2":{"name":"Czechia","flag":"🇨🇿","code":"CZE"},"tier3":{"name":"Qatar","flag":"🇶🇦","code":"QAT"}},
-    {"player":"Fernando","tier1":{"name":"Colombia","flag":"🇨🇴","code":"COL"},"tier2":{"name":"United States","flag":"🇺🇸","code":"USA"},"tier3":{"name":"Jordan","flag":"🇯🇴","code":"JOR"}},
-    {"player":"Jenny","tier1":{"name":"Morocco","flag":"🇲🇦","code":"MAR"},"tier2":{"name":"Ecuador","flag":"🇪🇨","code":"ECU"},"tier3":{"name":"New Zealand","flag":"🇳🇿","code":"NZL"}},
-    {"player":"Sophia","tier1":{"name":"Germany","flag":"🇩🇪","code":"GER"},"tier2":{"name":"Switzerland","flag":"🇨🇭","code":"SUI"},"tier3":{"name":"Qatar","flag":"🇶🇦","code":"QAT"}},
-    {"player":"Ollie","tier1":{"name":"Spain","flag":"🇪🇸","code":"ESP"},"tier2":{"name":"Sweden","flag":"🇸🇪","code":"SWE"},"tier3":{"name":"Bosnia & Herzegovina","flag":"🇧🇦","code":"BIH"}},
-    {"player":"David","tier1":{"name":"Brazil","flag":"🇧🇷","code":"BRA"},"tier2":{"name":"Egypt","flag":"🇪🇬","code":"EGY"},"tier3":{"name":"Iraq","flag":"🇮🇶","code":"IRQ"}},
-    {"player":"Filipe","tier1":{"name":"Portugal","flag":"🇵🇹","code":"POR"},"tier2":{"name":"Uruguay","flag":"🇺🇾","code":"URU"},"tier3":{"name":"Haiti","flag":"🇭🇹","code":"HTI"}},
-    {"player":"Ramy","tier1":{"name":"Belgium","flag":"🇧🇪","code":"BEL"},"tier2":{"name":"Côte d’Ivoire","flag":"🇨🇮","code":"CIV"},"tier3":{"name":"Curaçao","flag":"🇨🇼","code":"CUW"}},
-    {"player":"Ghada","tier1":{"name":"France","flag":"🇫🇷","code":"FRA"},"tier2":{"name":"Iran","flag":"🇮🇷","code":"IRI"},"tier3":{"name":"Uzbekistan","flag":"🇺🇿","code":"UZB"}},
-    {"player":"Harper","tier1":{"name":"Spain","flag":"🇪🇸","code":"ESP"},"tier2":{"name":"Canada","flag":"🇨🇦","code":"CAN"},"tier3":{"name":"Cape Verde","flag":"🇨🇻","code":"CPV"}}
+    {
+      "player": "Johnny",
+      "tier1": {
+        "name": "Morocco",
+        "flag": "🇲🇦",
+        "code": "MAR"
+      },
+      "tier2": {
+        "name": "Paraguay",
+        "flag": "🇵🇾",
+        "code": "PAR"
+      },
+      "tier3": {
+        "name": "Curaçao",
+        "flag": "🇨🇼",
+        "code": "CUW"
+      }
+    },
+    {
+      "player": "Antoinette",
+      "tier1": {
+        "name": "Netherlands",
+        "flag": "🇳🇱",
+        "code": "NED"
+      },
+      "tier2": {
+        "name": "Senegal",
+        "flag": "🇸🇳",
+        "code": "SEN"
+      },
+      "tier3": {
+        "name": "Saudi Arabia",
+        "flag": "🇸🇦",
+        "code": "KSA"
+      }
+    },
+    {
+      "player": "Alex",
+      "tier1": {
+        "name": "Croatia",
+        "flag": "🇭🇷",
+        "code": "CRO"
+      },
+      "tier2": {
+        "name": "DR Congo",
+        "flag": "🇨🇩",
+        "code": "COD"
+      },
+      "tier3": {
+        "name": "New Zealand",
+        "flag": "🇳🇿",
+        "code": "NZL"
+      }
+    },
+    {
+      "player": "Mena",
+      "tier1": {
+        "name": "Portugal",
+        "flag": "🇵🇹",
+        "code": "POR"
+      },
+      "tier2": {
+        "name": "Panama",
+        "flag": "🇵🇦",
+        "code": "PAN"
+      },
+      "tier3": {
+        "name": "Iraq",
+        "flag": "🇮🇶",
+        "code": "IRQ"
+      }
+    },
+    {
+      "player": "Santi",
+      "tier1": {
+        "name": "Colombia",
+        "flag": "🇨🇴",
+        "code": "COL"
+      },
+      "tier2": {
+        "name": "Australia",
+        "flag": "🇦🇺",
+        "code": "AUS"
+      },
+      "tier3": {
+        "name": "Saudi Arabia",
+        "flag": "🇸🇦",
+        "code": "KSA"
+      }
+    },
+    {
+      "player": "Yasmeena",
+      "tier1": {
+        "name": "France",
+        "flag": "🇫🇷",
+        "code": "FRA"
+      },
+      "tier2": {
+        "name": "Austria",
+        "flag": "🇦🇹",
+        "code": "AUT"
+      },
+      "tier3": {
+        "name": "Bosnia & Herzegovina",
+        "flag": "🇧🇦",
+        "code": "BIH"
+      }
+    },
+    {
+      "player": "Ricky",
+      "tier1": {
+        "name": "Netherlands",
+        "flag": "🇳🇱",
+        "code": "NED"
+      },
+      "tier2": {
+        "name": "Scotland",
+        "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+        "code": "SCO"
+      },
+      "tier3": {
+        "name": "Ghana",
+        "flag": "🇬🇭",
+        "code": "GHA"
+      }
+    },
+    {
+      "player": "Ziad",
+      "tier1": {
+        "name": "England",
+        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+        "code": "ENG"
+      },
+      "tier2": {
+        "name": "Mexico",
+        "flag": "🇲🇽",
+        "code": "MEX"
+      },
+      "tier3": {
+        "name": "Uzbekistan",
+        "flag": "🇺🇿",
+        "code": "UZB"
+      }
+    },
+    {
+      "player": "Emma",
+      "tier1": {
+        "name": "Argentina",
+        "flag": "🇦🇷",
+        "code": "ARG"
+      },
+      "tier2": {
+        "name": "South Korea",
+        "flag": "🇰🇷",
+        "code": "KOR"
+      },
+      "tier3": {
+        "name": "Jordan",
+        "flag": "🇯🇴",
+        "code": "JOR"
+      }
+    },
+    {
+      "player": "Jazzy",
+      "tier1": {
+        "name": "England",
+        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+        "code": "ENG"
+      },
+      "tier2": {
+        "name": "Tunisia",
+        "flag": "🇹🇳",
+        "code": "TUN"
+      },
+      "tier3": {
+        "name": "South Africa",
+        "flag": "🇿🇦",
+        "code": "RSA"
+      }
+    },
+    {
+      "player": "Ruby",
+      "tier1": {
+        "name": "Germany",
+        "flag": "🇩🇪",
+        "code": "GER"
+      },
+      "tier2": {
+        "name": "Algeria",
+        "flag": "🇩🇿",
+        "code": "DZA"
+      },
+      "tier3": {
+        "name": "Haiti",
+        "flag": "🇭🇹",
+        "code": "HTI"
+      }
+    },
+    {
+      "player": "Teigan",
+      "tier1": {
+        "name": "Croatia",
+        "flag": "🇭🇷",
+        "code": "CRO"
+      },
+      "tier2": {
+        "name": "Japan",
+        "flag": "🇯🇵",
+        "code": "JPN"
+      },
+      "tier3": {
+        "name": "Ghana",
+        "flag": "🇬🇭",
+        "code": "GHA"
+      }
+    },
+    {
+      "player": "Nadine",
+      "tier1": {
+        "name": "Argentina",
+        "flag": "🇦🇷",
+        "code": "ARG"
+      },
+      "tier2": {
+        "name": "Norway",
+        "flag": "🇳🇴",
+        "code": "NOR"
+      },
+      "tier3": {
+        "name": "Cape Verde",
+        "flag": "🇨🇻",
+        "code": "CPV"
+      }
+    },
+    {
+      "player": "Vako",
+      "tier1": {
+        "name": "Belgium",
+        "flag": "🇧🇪",
+        "code": "BEL"
+      },
+      "tier2": {
+        "name": "Türkiye",
+        "flag": "🇹🇷",
+        "code": "TUR"
+      },
+      "tier3": {
+        "name": "South Africa",
+        "flag": "🇿🇦",
+        "code": "RSA"
+      }
+    },
+    {
+      "player": "Andre",
+      "tier1": {
+        "name": "Brazil",
+        "flag": "🇧🇷",
+        "code": "BRA"
+      },
+      "tier2": {
+        "name": "Czechia",
+        "flag": "🇨🇿",
+        "code": "CZE"
+      },
+      "tier3": {
+        "name": "Qatar",
+        "flag": "🇶🇦",
+        "code": "QAT"
+      }
+    },
+    {
+      "player": "Fernando",
+      "tier1": {
+        "name": "Colombia",
+        "flag": "🇨🇴",
+        "code": "COL"
+      },
+      "tier2": {
+        "name": "United States",
+        "flag": "🇺🇸",
+        "code": "USA"
+      },
+      "tier3": {
+        "name": "Jordan",
+        "flag": "🇯🇴",
+        "code": "JOR"
+      }
+    },
+    {
+      "player": "Jenny",
+      "tier1": {
+        "name": "Morocco",
+        "flag": "🇲🇦",
+        "code": "MAR"
+      },
+      "tier2": {
+        "name": "Ecuador",
+        "flag": "🇪🇨",
+        "code": "ECU"
+      },
+      "tier3": {
+        "name": "New Zealand",
+        "flag": "🇳🇿",
+        "code": "NZL"
+      }
+    },
+    {
+      "player": "Sophia",
+      "tier1": {
+        "name": "Germany",
+        "flag": "🇩🇪",
+        "code": "GER"
+      },
+      "tier2": {
+        "name": "Switzerland",
+        "flag": "🇨🇭",
+        "code": "SUI"
+      },
+      "tier3": {
+        "name": "Qatar",
+        "flag": "🇶🇦",
+        "code": "QAT"
+      }
+    },
+    {
+      "player": "Ollie",
+      "tier1": {
+        "name": "Spain",
+        "flag": "🇪🇸",
+        "code": "ESP"
+      },
+      "tier2": {
+        "name": "Sweden",
+        "flag": "🇸🇪",
+        "code": "SWE"
+      },
+      "tier3": {
+        "name": "Bosnia & Herzegovina",
+        "flag": "🇧🇦",
+        "code": "BIH"
+      }
+    },
+    {
+      "player": "David",
+      "tier1": {
+        "name": "Brazil",
+        "flag": "🇧🇷",
+        "code": "BRA"
+      },
+      "tier2": {
+        "name": "Egypt",
+        "flag": "🇪🇬",
+        "code": "EGY"
+      },
+      "tier3": {
+        "name": "Iraq",
+        "flag": "🇮🇶",
+        "code": "IRQ"
+      }
+    },
+    {
+      "player": "Filipe",
+      "tier1": {
+        "name": "Portugal",
+        "flag": "🇵🇹",
+        "code": "POR"
+      },
+      "tier2": {
+        "name": "Uruguay",
+        "flag": "🇺🇾",
+        "code": "URU"
+      },
+      "tier3": {
+        "name": "Haiti",
+        "flag": "🇭🇹",
+        "code": "HTI"
+      }
+    },
+    {
+      "player": "Ramy",
+      "tier1": {
+        "name": "Belgium",
+        "flag": "🇧🇪",
+        "code": "BEL"
+      },
+      "tier2": {
+        "name": "Côte d’Ivoire",
+        "flag": "🇨🇮",
+        "code": "CIV"
+      },
+      "tier3": {
+        "name": "Curaçao",
+        "flag": "🇨🇼",
+        "code": "CUW"
+      }
+    },
+    {
+      "player": "Ghada",
+      "tier1": {
+        "name": "France",
+        "flag": "🇫🇷",
+        "code": "FRA"
+      },
+      "tier2": {
+        "name": "Iran",
+        "flag": "🇮🇷",
+        "code": "IRI"
+      },
+      "tier3": {
+        "name": "Uzbekistan",
+        "flag": "🇺🇿",
+        "code": "UZB"
+      }
+    },
+    {
+      "player": "Harper",
+      "tier1": {
+        "name": "Spain",
+        "flag": "🇪🇸",
+        "code": "ESP"
+      },
+      "tier2": {
+        "name": "Canada",
+        "flag": "🇨🇦",
+        "code": "CAN"
+      },
+      "tier3": {
+        "name": "Cape Verde",
+        "flag": "🇨🇻",
+        "code": "CPV"
+      }
+    }
   ]
 }

@@ -11,7 +11,7 @@
     <div>
       <p class="eyebrow">Family World Cup Sweepstake</p>
       <h1>🏆 Sweepstake HQ</h1>
-      <p class="subtitle">Live-ish leaderboards, prize tracking, and everyone’s teams in one place.</p>
+      <p class="subtitle">Leaderboards, banter, scores, standings, and everyone’s teams in one place.</p>
     </div>
     <div class="prizes">
       <div><strong>$80</strong><span>Winner</span></div>
@@ -36,6 +36,22 @@
       </div>
     </section>
 
+    <section class="spotlight" id="spotlight"></section>
+
+    <section class="grid three stat-panels">
+      <article class="mini-card" id="currentLeader"></article>
+      <article class="mini-card" id="woodenSpoon"></article>
+      <article class="mini-card" id="carryingJob"></article>
+    </section>
+
+    <section class="card">
+      <div class="card-head">
+        <h2>🗣️ Sweepstake banter desk</h2>
+        <p>Automatically generated nonsense based on the current standings.</p>
+      </div>
+      <div class="banter-grid" id="banterGrid"></div>
+    </section>
+
     <section class="grid two">
       <article class="card">
         <div class="card-head">
@@ -44,7 +60,7 @@
         </div>
         <div class="table-wrap">
           <table id="goldenBootTable">
-            <thead><tr><th>Rank</th><th>Player</th><th>Teams</th><th>Goals</th><th>Games</th><th>G/G</th></tr></thead>
+            <thead><tr><th>Rank</th><th>Player</th><th>Teams</th><th>Goals</th><th>Games</th></tr></thead>
             <tbody></tbody>
           </table>
         </div>
@@ -74,10 +90,26 @@
       </div>
       <div class="table-wrap">
         <table id="drawTable">
-          <thead><tr><th>Player</th><th>Tier 1</th><th>Tier 2</th><th>Tier 3</th><th>Total Goals</th><th>Games</th></tr></thead>
+          <thead><tr><th>Player</th><th>T1</th><th>T2</th><th>T3</th><th>Goals</th><th>Games</th></tr></thead>
           <tbody></tbody>
         </table>
       </div>
+    </section>
+
+    <section class="card">
+      <div class="card-head">
+        <h2>🌍 World Cup Group Standings</h2>
+        <p>All groups ranked by points, goal difference, then goals scored.</p>
+      </div>
+      <div class="group-grid" id="groupGrid"></div>
+    </section>
+
+    <section class="card">
+      <div class="card-head">
+        <h2>📋 All Scores</h2>
+        <p>Completed matches currently counted in the sweepstake calculations.</p>
+      </div>
+      <div class="scores-list" id="scoresList"></div>
     </section>
 
     <section class="card">

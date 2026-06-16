@@ -1,25 +1,29 @@
 # Family World Cup Sweepstake HQ
 
-Static website for the family World Cup sweepstake.
+Static GitHub Pages website for the family World Cup sweepstake.
 
 ## What it does
 
-- Shows Golden Boot leaderboard: total goals scored by each player's 3 teams.
-- Shows Best Average Team leaderboard: Tier 2 teams ranked by points, goal difference, goals for, games played.
-- Shows full player allocations.
+- Golden Boot leaderboard: total goals scored by each player's 3 teams.
+- Best Average Team leaderboard: Tier 2 teams ranked by points, goal difference, goals for, games played.
+- Current leader banner, wooden spoon watch, carrying-job stats, and automatic banter.
+- Full player allocations with search.
+- Completed scores section.
+- World Cup group standings, ranked by points, goal difference, and goals for.
+- Team goals tracker.
+- Uses the actual England and Scotland subdivision emoji sequences in the data.
 - Updates `data/results.json` automatically twice a day using GitHub Actions.
 
 ## Setup on GitHub Pages
 
-1. Create a new public GitHub repo called `worldcup-sweepstake` under `zburjony`.
-2. Upload all files from this folder to the repo.
-3. Go to **Settings → Pages**.
-4. Under **Build and deployment**, choose:
+1. Upload all files from this folder to your `worldcup-sweepstake` repo.
+2. Go to **Settings → Pages**.
+3. Under **Build and deployment**, choose:
    - Source: **Deploy from a branch**
    - Branch: **main**
    - Folder: **/ (root)**
-5. Save.
-6. Your site should appear at:
+4. Save.
+5. Your site should appear at:
    `https://zburjony.github.io/worldcup-sweepstake/`
 
 ## Automatic updates

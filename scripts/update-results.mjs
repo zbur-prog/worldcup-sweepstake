@@ -30,6 +30,30 @@ const teamAliases = {
   'South Africa': 'South Africa'
 };
 
+
+const groupLookup = {
+  A: ['Mexico', 'South Africa', 'South Korea', 'Czechia'],
+  B: ['Canada', 'Bosnia & Herzegovina', 'Qatar', 'Switzerland'],
+  C: ['Brazil', 'Morocco', 'Haiti', 'Scotland'],
+  D: ['United States', 'Paraguay', 'Australia', 'Türkiye'],
+  E: ['Germany', 'Curaçao', 'Côte d’Ivoire', 'Ecuador'],
+  F: ['Netherlands', 'Japan', 'Sweden', 'Tunisia'],
+  G: ['Belgium', 'Egypt', 'Iran', 'New Zealand'],
+  H: ['Spain', 'Cape Verde', 'Saudi Arabia', 'Uruguay'],
+  I: ['France', 'Senegal', 'Iraq', 'Norway'],
+  J: ['Argentina', 'Algeria', 'Austria', 'Jordan'],
+  K: ['Portugal', 'DR Congo', 'Uzbekistan', 'Colombia'],
+  L: ['England', 'Croatia', 'Ghana', 'Panama']
+};
+function groupForTeam(team) {
+  return Object.entries(groupLookup).find(([, teams]) => teams.includes(team))?.[0] || null;
+}
+function groupForMatch(homeTeam, awayTeam) {
+  const homeGroup = groupForTeam(homeTeam);
+  const awayGroup = groupForTeam(awayTeam);
+  return homeGroup && homeGroup === awayGroup ? homeGroup : (homeGroup || awayGroup);
+}
+
 const codeToName = {
   ARG:'Argentina', ESP:'Spain', FRA:'France', ENG:'England', POR:'Portugal', BRA:'Brazil', MAR:'Morocco', NED:'Netherlands', BEL:'Belgium', GER:'Germany', CRO:'Croatia', COL:'Colombia',
   MEX:'Mexico', SEN:'Senegal', URU:'Uruguay', USA:'United States', JPN:'Japan', SUI:'Switzerland', IRI:'Iran', TUR:'Türkiye', ECU:'Ecuador', AUT:'Austria', KOR:'South Korea', AUS:'Australia', DZA:'Algeria', EGY:'Egypt', CAN:'Canada', NOR:'Norway', CIV:'Côte d’Ivoire', PAR:'Paraguay', SWE:'Sweden', CZE:'Czechia', SCO:'Scotland', COD:'DR Congo', TUN:'Tunisia',
@@ -78,7 +102,7 @@ function parseMatch(m) {
     awayGoals,
     status: 'FINISHED',
     utcDate: getFirst(m, ['utcDate','date','datetime','start_time','kickoff']) || null,
-    group: getFirst(m, ['group','stage','matchday']) || null
+    group: getFirst(m, ['group','stage','matchday']) || groupForMatch(homeTeam, awayTeam)
   };
 }
 
@@ -88,7 +112,7 @@ const fallbackMatches = [
   ['Haiti','Scotland',0,1], ['Australia','Türkiye',2,0], ['Germany','Curaçao',7,1],
   ['Netherlands','Japan',2,2], ['Côte d’Ivoire','Ecuador',1,0], ['Sweden','Tunisia',5,1],
   ['Spain','Cape Verde',0,0], ['Belgium','Egypt',1,1]
-].map(([homeTeam, awayTeam, homeGoals, awayGoals], i) => ({ id: `fallback-${i+1}`, homeTeam, awayTeam, homeGoals, awayGoals, status:'FINISHED', utcDate:null, group:null }));
+].map(([homeTeam, awayTeam, homeGoals, awayGoals], i) => ({ id: `fallback-${i+1}`, homeTeam, awayTeam, homeGoals, awayGoals, status:'FINISHED', utcDate:null, group: groupForMatch(homeTeam, awayTeam) }));
 
 async function main() {
   let matches = [];
