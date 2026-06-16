@@ -824,7 +824,7 @@ footer { color: var(--muted); max-width: 1180px; margin: 0 auto; padding: 0 20px
   }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 236px) {
   :root {
     --gb-mobile-rank: 30px;
     --gb-mobile-player: 94px;
