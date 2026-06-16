@@ -688,10 +688,10 @@ footer { color: var(--muted); max-width: 1180px; margin: 0 auto; padding: 0 20px
 /* v11 FINAL: Golden Boot stable 5-column mobile table.
    Tweak these variables if you want to adjust the mobile width. */
 :root {
-  --gb-mobile-rank: 34px;
-  --gb-mobile-player: 104px;
-  --gb-mobile-teams: 86px;
-  --gb-mobile-score: 38px;
+    --gb-mobile-rank: 28px;
+    --gb-mobile-player: 84px;
+    --gb-mobile-teams: 70px;
+    --gb-mobile-score: 34px;
 }
 
 #goldenBootTable {
