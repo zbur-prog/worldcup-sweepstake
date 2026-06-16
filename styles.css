@@ -108,3 +108,31 @@ td { font-size: 14px; }
   .goldenboot-table td { padding: 7px 3px; font-size: 12px; }
   .goldenboot-table .team-flags { font-size: 16px; }
 }
+/* USER FINAL TWEAKS - Golden Boot only
+   Change these four values if you want to tune the mobile table widths. */
+@media (max-width: 760px) {
+  :root {
+    --gb-rank: 30px;
+    --gb-player: 92px;
+    --gb-teams: 78px;
+    --gb-score: 32px;
+  }
+
+  .goldenboot-table .col-player {
+    font-size: 15px;
+    font-weight: 900;
+  }
+
+  .goldenboot-table .team-flags {
+    font-size: 16px;
+    letter-spacing: 0;
+  }
+}
+
+@media (min-width: 761px) {
+  .goldenboot-table .col-player {
+    font-size: 16px;
+    font-weight: 900;
+  }
+}
+/* END USER FINAL TWEAKS */
