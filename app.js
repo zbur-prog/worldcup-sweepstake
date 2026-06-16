@@ -74,62 +74,14 @@ function renderDraw(players, teams) {
   `).join('');
 }
 
-// function renderBanter(rows, teams) {
-//   const leader = rows[0];
-//   const best = leader.codes.map(c => ({ code:c, goals:gf(teams[c]) })).sort((a,b)=>b.goals-a.goals)[0];
-//   byId('banter').innerHTML = `
-//     <div class="banter-item">${teamCell(best.code, teams)} is currently doing the heavy lifting for ${leader.name}.</div>
-//     <div class="banter-item">If your teams have not scored yet, stay calm. Panic is scheduled for the knockout rounds.</div>
-//     <div class="banter-item">All complaints about the draw remain formally ignored.</div>
-//   `;
-// }
-
 function renderBanter(rows, teams) {
   const leader = rows[0];
-  const last = rows[rows.length - 1];
-
-  const leaderGames = leader.games ?? leader.played ?? leader.codes.reduce((sum, code) => {
-    return sum + (teams[code]?.played || 0);
-  }, 0);
-
-  const leaderBest = leader.codes
-    .map(c => ({ code: c, goals: gf(teams[c]) }))
-    .sort((a, b) => b.goals - a.goals)[0];
-
-  const biggestCarry = rows
-    .map(r => {
-      const best = r.codes
-        .map(c => ({ code: c, goals: gf(teams[c]) }))
-        .sort((a, b) => b.goals - a.goals)[0];
-
-      return {
-        name: r.name,
-        code: best.code,
-        goals: best.goals,
-        total: r.goals,
-        share: r.goals ? Math.round((best.goals / r.goals) * 100) : 0
-      };
-    })
-    .filter(x => x.total > 0)
-    .sort((a, b) => b.share - a.share || b.goals - a.goals)[0];
-
-  const lowScorers = rows.filter(r => r.goals === 0).length;
-
-  const lines = [
-    `${teamCell(leaderBest.code, teams)} is currently doing the heavy lifting for ${leader.name}.`,
-    `${leader.name} leads the Golden Boot race with ${leader.goals} goals from ${leaderGames} games.`,
-    biggestCarry
-      ? `${biggestCarry.name} is relying on ${teamCell(biggestCarry.code, teams)} for ${biggestCarry.share}% of their goals.`
-      : `Nobody has enough goals to start acting smug yet.`,
-    lowScorers > 0
-      ? `${lowScorers} players are still waiting for their teams to remember where the goal is.`
-      : `${last.name} is currently holding the wooden spoon, but there is still plenty of time for chaos.`
-  ];
-
-  byId('banter').innerHTML = lines
-    .slice(0, 3)
-    .map(line => `<div class="banter-item">${line}</div>`)
-    .join('');
+  const best = leader.codes.map(c => ({ code:c, goals:gf(teams[c]) })).sort((a,b)=>b.goals-a.goals)[0];
+  byId('banter').innerHTML = `
+    <div class="banter-item">${teamCell(best.code, teams)} is currently doing the heavy lifting for ${leader.name}.</div>
+    <div class="banter-item">If your teams have not scored yet, stay calm. Panic is scheduled for the knockout rounds.</div>
+    <div class="banter-item">All complaints about the draw remain formally ignored.</div>
+  `;
 }
 
 function renderScores(matches, teams) {
