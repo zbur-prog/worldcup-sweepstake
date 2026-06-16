@@ -8,123 +8,85 @@
 </head>
 <body>
   <header class="hero">
-    <div>
+    <div class="container">
       <p class="eyebrow">Family World Cup Sweepstake</p>
       <h1>🏆 Sweepstake HQ</h1>
-      <p class="subtitle">Leaderboards, banter, scores, standings, and everyone’s teams in one place.</p>
-    </div>
-    <div class="prizes">
-      <div><strong>$80</strong><span>Winner</span></div>
-      <div><strong>$25</strong><span>Best Average Team</span></div>
-      <div><strong>$15</strong><span>Golden Boot</span></div>
+      <p class="sub">Golden Boot, best average team, scores and standings.</p>
+      <p class="updated">Last updated: <strong id="lastUpdated">Loading…</strong></p>
     </div>
   </header>
 
-  <main>
-    <section class="status-card">
-      <div>
-        <span class="label">Last updated</span>
-        <strong id="lastUpdated">Loading…</strong>
-      </div>
-      <div>
-        <span class="label">Completed matches counted</span>
-        <strong id="matchCount">—</strong>
-      </div>
-      <div>
-        <span class="label">Data source</span>
-        <strong id="dataSource">—</strong>
-      </div>
-    </section>
+  <main class="container">
+    <section class="grid cards" id="topCards"></section>
 
-    <section class="spotlight" id="spotlight"></section>
-
-    <section class="grid three stat-panels">
-      <article class="mini-card" id="currentLeader"></article>
-      <article class="mini-card" id="woodenSpoon"></article>
-      <article class="mini-card" id="carryingJob"></article>
-    </section>
-
-    <section class="card">
-      <div class="card-head">
-        <h2>🗣️ Sweepstake banter desk</h2>
-        <p>Automatically generated nonsense based on the current standings.</p>
-      </div>
-      <div class="banter-grid" id="banterGrid"></div>
-    </section>
-
-    <section class="grid two">
-      <article class="card golden-card">
-        <div class="card-head">
-          <h2>⚽ Golden Boot</h2>
-          <p>Combined goals from each player’s 3 teams.</p>
-        </div>
-        <div class="table-wrap">
-          <table id="goldenBootTable">
-            <thead><tr><th>#</th><th>Player</th><th>Teams</th><th>⚽</th><th>GP</th></tr></thead>
-            <tbody></tbody>
-          </table>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card-head">
-          <h2>🥈 Best Average Team</h2>
-          <p>Tier 2 team tracker. Sorted by points, goal difference, then goals.</p>
-        </div>
-        <div class="table-wrap">
-          <table id="averageTable">
-            <thead><tr><th>Rank</th><th>Player</th><th>Team</th><th>Pts</th><th>GD</th><th>GF</th><th>GP</th></tr></thead>
-            <tbody></tbody>
-          </table>
-        </div>
-      </article>
-    </section>
-
-    <section class="card">
-      <div class="card-head row">
+    <section class="card golden-card">
+      <div class="section-head">
         <div>
-          <h2>👥 Full Draw</h2>
-          <p>Teams are shown Tier 1, Tier 2, Tier 3.</p>
+          <h2>⚽ Golden Boot</h2>
+          <p>Combined goals scored by each player’s 3 teams.</p>
         </div>
-        <input id="search" placeholder="Search player or team…" />
       </div>
-      <div class="table-wrap">
-        <table id="drawTable">
-          <thead><tr><th>Player</th><th>Tier 1</th><th>Tier 2</th><th>Tier 3</th><th>Total Goals</th><th>Games</th></tr></thead>
-          <tbody></tbody>
+      <div class="table-wrap no-scroll">
+        <table class="goldenboot-table">
+          <colgroup>
+            <col class="gb-rank" />
+            <col class="gb-player" />
+            <col class="gb-teams" />
+            <col class="gb-score" />
+            <col class="gb-score" />
+          </colgroup>
+          <thead>
+            <tr>
+              <th class="col-rank">#</th>
+              <th class="col-player">Player</th>
+              <th class="col-teams">Teams</th>
+              <th class="col-goals">⚽</th>
+              <th class="col-games">GP</th>
+            </tr>
+          </thead>
+          <tbody id="goldenBody"></tbody>
         </table>
       </div>
     </section>
 
-    <section class="card">
-      <div class="card-head">
-        <h2>🌍 World Cup Group Standings</h2>
-        <p>All groups ranked by points, goal difference, then goals scored.</p>
-      </div>
-      <div class="group-grid" id="groupGrid"></div>
+    <section class="grid two">
+      <section class="card">
+        <h2>🥈 Best Average Team</h2>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>#</th><th>Team</th><th>Owner</th><th>Pts</th><th>GD</th><th>GF</th></tr></thead>
+            <tbody id="averageBody"></tbody>
+          </table>
+        </div>
+      </section>
+      <section class="card">
+        <h2>🎲 Full Draw</h2>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Player</th><th>T1</th><th>T2</th><th>T3</th></tr></thead>
+            <tbody id="drawBody"></tbody>
+          </table>
+        </div>
+      </section>
     </section>
 
     <section class="card">
-      <div class="card-head">
-        <h2>📋 All Scores</h2>
-        <p>Completed matches currently counted in the sweepstake calculations.</p>
-      </div>
-      <div class="scores-list" id="scoresList"></div>
+      <h2>📣 Banter Desk</h2>
+      <div id="banter" class="banter"></div>
     </section>
 
     <section class="card">
-      <div class="card-head">
-        <h2>📊 Team Goals</h2>
-        <p>Every team used in the sweepstake, updated from completed matches.</p>
-      </div>
-      <div class="team-grid" id="teamGrid"></div>
+      <h2>📋 All Scores</h2>
+      <div class="scores" id="scores"></div>
+    </section>
+
+    <section class="card">
+      <h2>🌍 Group Standings</h2>
+      <div class="groups" id="groups"></div>
     </section>
   </main>
 
-  <footer>
-    Full rules available on request. All complaints must be lodged before kick-off and will be ignored thereafter.
-  </footer>
-
+  <footer class="container footer">Full rules available on request.</footer>
   <script src="app.js"></script>
 </body>
 </html>

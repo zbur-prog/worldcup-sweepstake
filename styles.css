@@ -1,854 +1,110 @@
 :root {
-  --bg: #07150f;
-  --panel: rgba(255,255,255,0.08);
-  --panel-2: rgba(255,255,255,0.12);
-  --text: #f4fff7;
-  --muted: #a9c7b4;
-  --gold: #f9c74f;
-  --green: #47d16c;
-  --red: #ff5d73;
-  --border: rgba(255,255,255,0.14);
-  --shadow: 0 24px 70px rgba(0,0,0,0.35);
+  --bg: #07110d;
+  --panel: #102018;
+  --panel2: #13291f;
+  --line: rgba(255,255,255,.1);
+  --text: #f3f7f1;
+  --muted: #a8b5ad;
+  --gold: #f7c948;
+  --green: #19c37d;
+
+  /* ONE PLACE TO TUNE GOLDEN BOOT COLUMN WIDTHS */
+  --gb-rank: 34px;
+  --gb-player: 100px;
+  --gb-teams: 82px;
+  --gb-score: 34px;
 }
+
 * { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
 body {
-  margin: 0;
-  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background:
-    radial-gradient(circle at top left, rgba(71,209,108,.25), transparent 30rem),
-    radial-gradient(circle at top right, rgba(249,199,79,.22), transparent 30rem),
-    linear-gradient(135deg, #06140e, #092216 50%, #03100b);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: radial-gradient(circle at top, #173c2d 0, var(--bg) 44rem);
   color: var(--text);
-  min-height: 100vh;
 }
-.hero {
-  max-width: 1180px;
-  margin: 0 auto;
-  padding: 42px 20px 26px;
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 24px;
-  align-items: end;
-}
-.eyebrow { text-transform: uppercase; letter-spacing: .18em; color: var(--gold); font-weight: 800; margin: 0 0 8px; }
-h1 { font-size: clamp(2.3rem, 7vw, 5.4rem); line-height: .9; margin: 0; text-shadow: 0 10px 40px rgba(0,0,0,.45); }
-.subtitle { color: var(--muted); font-size: 1.1rem; margin: 16px 0 0; }
-.prizes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; min-width: min(500px, 100%); }
-.prizes div { background: linear-gradient(180deg, rgba(249,199,79,.22), rgba(255,255,255,.08)); border: 1px solid var(--border); border-radius: 18px; padding: 16px; box-shadow: var(--shadow); }
-.prizes strong { display:block; color: var(--gold); font-size: 2rem; }
-.prizes span { display:block; color: var(--muted); font-weight: 700; }
-main { max-width: 1180px; margin: 0 auto; padding: 0 20px 48px; }
-.status-card, .card { background: var(--panel); border: 1px solid var(--border); border-radius: 24px; box-shadow: var(--shadow); backdrop-filter: blur(12px); }
-.status-card { padding: 16px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 18px; }
-.status-card > div { background: rgba(0,0,0,.18); border-radius: 16px; padding: 14px 16px; }
-.label { display:block; color: var(--muted); font-size: .8rem; text-transform: uppercase; letter-spacing: .08em; font-weight: 800; margin-bottom: 5px; }
-.grid.two { display: grid; grid-template-columns: 1.25fr 1fr; gap: 18px; margin-bottom: 18px; }
-.card { padding: 18px; margin-bottom: 18px; }
-.card-head { margin-bottom: 14px; }
-.card-head.row { display:flex; justify-content:space-between; gap: 16px; align-items:center; }
-h2 { margin: 0 0 5px; font-size: 1.45rem; }
-p { margin: 0; color: var(--muted); }
-input { width: min(360px, 100%); padding: 12px 14px; border-radius: 14px; border: 1px solid var(--border); background: rgba(0,0,0,.22); color: var(--text); font-size: 1rem; }
-.table-wrap { overflow-x: auto; border-radius: 16px; border: 1px solid var(--border); }
-table { width: 100%; border-collapse: collapse; min-width: 560px; }
-th, td { padding: 12px 12px; border-bottom: 1px solid rgba(255,255,255,.09); text-align: left; vertical-align: middle; }
-th { color: var(--muted); font-size: .75rem; text-transform: uppercase; letter-spacing: .08em; background: rgba(0,0,0,.24); }
-tbody tr:hover { background: rgba(255,255,255,.06); }
-.rank { font-weight: 900; color: var(--gold); }
-.player { font-weight: 900; }
-.team-pill { display:inline-flex; gap: 5px; align-items:center; white-space:nowrap; padding: 5px 7px; border-radius: 999px; background: rgba(255,255,255,.08); margin: 2px 2px 2px 0; }
-.team-code { font-weight: 900; letter-spacing: .02em; }
-.team-full { color: var(--muted); }
-.num { font-variant-numeric: tabular-nums; font-weight: 900; }
-.team-grid { display:grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 10px; }
-.team-card { background: rgba(0,0,0,.2); border: 1px solid var(--border); border-radius: 16px; padding: 12px; display:flex; justify-content:space-between; align-items:center; gap: 10px; }
-.team-card strong { display:block; }
-.team-card span { color: var(--muted); font-size: .9rem; }
-footer { color: var(--muted); max-width: 1180px; margin: 0 auto; padding: 0 20px 36px; text-align:center; }
-@media (max-width: 900px) {
-  .hero, .grid.two, .status-card { grid-template-columns: 1fr; }
-  .prizes { grid-template-columns: 1fr; }
-  .card-head.row { align-items: stretch; flex-direction: column; }
-  table { min-width: 520px; }
-  th, td { padding: 10px 8px; }
-  .team-full { display: none; }
-  .team-pill { padding: 5px 6px; gap: 4px; }
-  #drawTable, #goldenBootTable { min-width: 0; }
-  #drawTable th:nth-child(6), #drawTable td:nth-child(6) { display:none; }
-  #goldenBootTable th:nth-child(1), #goldenBootTable td:nth-child(1) { width: 42px; }
-}
-.spotlight {
-  background: linear-gradient(135deg, rgba(249,199,79,.28), rgba(71,209,108,.12)), rgba(255,255,255,.08);
-  border: 1px solid var(--border);
-  border-radius: 28px;
-  box-shadow: var(--shadow);
-  padding: 20px;
-  display: grid;
-  grid-template-columns: auto 1fr auto auto;
-  align-items: center;
-  gap: 18px;
-  margin-bottom: 18px;
-  overflow: hidden;
-}
-.trophy-big { font-size: clamp(3rem, 8vw, 6rem); filter: drop-shadow(0 14px 30px rgba(0,0,0,.4)); }
-.spotlight h2 { font-size: clamp(2rem, 5vw, 4rem); margin: 2px 0 8px; }
-.spot-stat { background: rgba(0,0,0,.22); border: 1px solid var(--border); border-radius: 20px; padding: 16px 18px; min-width: 120px; text-align:center; }
-.spot-stat strong { display:block; font-size: 2.3rem; color: var(--gold); line-height: 1; }
-.spot-stat span { color: var(--muted); font-size: .9rem; font-weight: 800; }
-.grid.three { display:grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-bottom: 18px; }
-.mini-card { background: rgba(255,255,255,.08); border:1px solid var(--border); border-radius: 22px; padding: 18px; box-shadow: var(--shadow); }
-.mini-card h3 { margin: 4px 0 8px; font-size: 1.55rem; }
-.banter-grid { display:grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
-.banter-card { background: rgba(0,0,0,.2); border:1px solid var(--border); border-radius: 16px; padding: 14px; color: var(--text); font-weight: 750; line-height: 1.35; }
-.group-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; }
-.group-card { background: rgba(0,0,0,.19); border: 1px solid var(--border); border-radius: 18px; padding: 12px; }
-.group-card h3 { margin: 0 0 10px; color: var(--gold); }
-.group-card table { min-width: 0; font-size: .88rem; }
-.group-card th, .group-card td { padding: 8px 6px; }
-.scores-list { display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 10px; }
-.score-card { display:grid; grid-template-columns: 1fr auto 1fr; align-items:center; gap: 10px; position:relative; background: rgba(0,0,0,.2); border:1px solid var(--border); border-radius: 16px; padding: 18px 12px 12px; }
-.score-card strong:first-of-type { text-align:right; }
-.scoreline { font-size: 1.35rem; font-weight: 1000; color: var(--gold); background: rgba(255,255,255,.08); border-radius: 999px; padding: 5px 10px; white-space:nowrap; }
-.score-group { position:absolute; top: 6px; left: 12px; color: var(--muted); font-size: .72rem; text-transform: uppercase; letter-spacing:.08em; font-weight: 900; }
-@media (max-width: 900px) {
-  .spotlight, .grid.three, .banter-grid { grid-template-columns: 1fr; }
-  .spot-stat { text-align:left; }
-  .scores-list { grid-template-columns: 1fr; }
-}
+.container { width: min(1120px, calc(100% - 24px)); margin: 0 auto; }
+.hero { padding: 28px 0 18px; text-align: center; }
+.eyebrow { color: var(--gold); text-transform: uppercase; letter-spacing: .12em; font-size: 12px; font-weight: 800; margin: 0; }
+h1 { font-size: clamp(34px, 8vw, 68px); margin: 6px 0 4px; line-height: 1; }
+h2 { margin: 0 0 10px; font-size: 22px; }
+p { margin: 0; }
+.sub, .updated, .card p { color: var(--muted); }
+.updated { margin-top: 8px; }
 
-.flag { font-family: 'Apple Color Emoji','Segoe UI Emoji','Noto Color Emoji', emoji, sans-serif; display:inline-block; min-width: 1.25em; text-align:center; }
-
-.team-compact { white-space: nowrap; font-weight: 800; }
-@media (max-width: 560px) {
-  main { padding-left: 10px; padding-right: 10px; }
-  .hero { padding-left: 10px; padding-right: 10px; }
-  .card { padding: 12px; border-radius: 18px; }
-  .table-wrap { overflow-x: visible; }
-  #goldenBootTable th:nth-child(3), #goldenBootTable td:nth-child(3) { max-width: 150px; }
-  #goldenBootTable .team-pill { margin-right: 1px; }
-  .group-grid { grid-template-columns: 1fr; }
-  .scores-list { grid-template-columns: 1fr; }
-  .score-card { grid-template-columns: 1fr auto 1fr; gap: 6px; padding-left: 8px; padding-right: 8px; }
-  .scoreline { font-size: 1rem; padding: 4px 8px; }
+.grid { display: grid; gap: 14px; }
+.cards { grid-template-columns: repeat(4, 1fr); margin: 16px 0; }
+.two { grid-template-columns: 1fr 1fr; margin-top: 14px; }
+.card {
+  background: linear-gradient(180deg, rgba(255,255,255,.055), rgba(255,255,255,.025));
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 16px;
+  box-shadow: 0 12px 36px rgba(0,0,0,.22);
 }
+.stat { min-height: 112px; }
+.stat .label { color: var(--muted); font-size: 13px; }
+.stat .value { font-size: 26px; font-weight: 900; margin-top: 8px; }
+.stat .detail { color: var(--muted); font-size: 13px; margin-top: 6px; }
+.section-head { display: flex; justify-content: space-between; align-items: end; gap: 12px; margin-bottom: 10px; }
 
+.table-wrap { width: 100%; overflow-x: auto; }
+.table-wrap.no-scroll { overflow-x: visible; }
+table { width: 100%; border-collapse: collapse; }
+th { color: var(--muted); text-align: left; font-size: 12px; text-transform: uppercase; letter-spacing: .06em; }
+th, td { padding: 10px 8px; border-bottom: 1px solid var(--line); vertical-align: middle; }
+td { font-size: 14px; }
+.num, .col-goals, .col-games { text-align: center; font-weight: 800; }
+.team-flags { white-space: nowrap; letter-spacing: 1px; font-size: 18px; }
+.team-pill { white-space: nowrap; display: inline-block; }
 
-/* v4 mobile/leaderboard fixes */
-#goldenBootTable { min-width: 0; }
-#goldenBootTable .teams-compact { white-space: normal; }
-#goldenBootTable .compact-only .team-full { display: none !important; }
-#goldenBootTable th:nth-child(1), #goldenBootTable td:nth-child(1) { width: 48px; }
-#goldenBootTable th:nth-child(4), #goldenBootTable td:nth-child(4),
-#goldenBootTable th:nth-child(5), #goldenBootTable td:nth-child(5) { width: 64px; text-align: right; }
-@media (max-width: 560px) {
-  #goldenBootTable th, #goldenBootTable td { padding: 9px 6px; }
-  #goldenBootTable th:nth-child(3), #goldenBootTable td:nth-child(3) { max-width: 132px; }
-  #goldenBootTable .team-pill { padding: 4px 5px; font-size: .86rem; }
-  #goldenBootTable .flag { min-width: 1em; }
-  #drawTable th:nth-child(5), #drawTable td:nth-child(5) { display:none; }
-}
-
-
-/* v5 compact table/mobile fixes */
-.table-wrap { max-width: 100%; }
-#goldenBootTable {
+/* GOLDEN BOOT TABLE - CLEAN AND ISOLATED */
+.golden-card { max-width: 760px; margin: 0 auto; }
+.goldenboot-table {
+  width: 100%;
   table-layout: fixed;
-  width: 100%;
-  min-width: 0 !important;
 }
-#goldenBootTable th, #goldenBootTable td {
-  padding: 8px 6px;
-}
-#goldenBootTable th:nth-child(1), #goldenBootTable td:nth-child(1) { width: 38px; }
-#goldenBootTable th:nth-child(2), #goldenBootTable td:nth-child(2) { width: auto; }
-#goldenBootTable th:nth-child(3), #goldenBootTable td:nth-child(3) { width: 86px; text-align: center; }
-#goldenBootTable th:nth-child(4), #goldenBootTable td:nth-child(4) { width: 50px; text-align: right; }
-#goldenBootTable th:nth-child(5), #goldenBootTable td:nth-child(5) { width: 50px; text-align: right; }
-#goldenBootTable .player { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.teams-flags { white-space: nowrap; }
-.flag-only { display: inline-flex; justify-content: center; align-items: center; width: 1.38em; margin: 0 1px; font-size: 1.05rem; }
-
-@media (max-width: 560px) {
-  main, .hero, footer { max-width: 430px; margin-left: auto; margin-right: auto; }
-  .card, .status-card, .spotlight, .mini-card { width: 100%; }
-  #goldenBootTable { font-size: .88rem; }
-  #goldenBootTable th { font-size: .62rem; letter-spacing: .04em; }
-  #goldenBootTable th:nth-child(1), #goldenBootTable td:nth-child(1) { width: 34px; }
-  #goldenBootTable th:nth-child(3), #goldenBootTable td:nth-child(3) { width: 76px; max-width: 76px; }
-  #goldenBootTable th:nth-child(4), #goldenBootTable td:nth-child(4),
-  #goldenBootTable th:nth-child(5), #goldenBootTable td:nth-child(5) { width: 42px; }
-  #goldenBootTable th, #goldenBootTable td { padding: 7px 4px; }
-  .flag-only { width: 1.18em; font-size: .98rem; margin: 0; }
-}
-
-@media (max-width: 380px) {
-  #goldenBootTable { font-size: .82rem; }
-  #goldenBootTable th:nth-child(3), #goldenBootTable td:nth-child(3) { width: 68px; }
-  #goldenBootTable th:nth-child(4), #goldenBootTable td:nth-child(4),
-  #goldenBootTable th:nth-child(5), #goldenBootTable td:nth-child(5) { width: 36px; }
-  .flag-only { width: 1.05em; font-size: .92rem; }
-}
-
-
-/* v6: tighter Golden Boot table for phones */
-#goldenBootTable {
-  table-layout: fixed;
-  width: 100%;
-}
-#goldenBootTable .gb-rank-col { width: 30px; max-width: 30px; }
-#goldenBootTable .gb-teams-col { width: 62px; max-width: 62px; }
-#goldenBootTable .gb-goals-col { width: 34px; max-width: 34px; }
-#goldenBootTable .gb-games-col { width: 34px; max-width: 34px; }
-#goldenBootTable .gb-player-col { width: auto; }
-#goldenBootTable th:nth-child(1), #goldenBootTable td:nth-child(1) {
-  width: 30px !important;
-  max-width: 30px !important;
-  min-width: 30px !important;
-  padding-left: 3px;
-  padding-right: 3px;
-  text-align: center;
-}
-#goldenBootTable th:nth-child(2), #goldenBootTable td:nth-child(2) {
-  width: auto !important;
-  min-width: 0;
-}
-#goldenBootTable th:nth-child(3), #goldenBootTable td:nth-child(3) {
-  width: 62px !important;
-  max-width: 62px !important;
-  min-width: 62px !important;
-  padding-left: 2px;
-  padding-right: 2px;
-  text-align: center;
-}
-#goldenBootTable th:nth-child(4), #goldenBootTable td:nth-child(4),
-#goldenBootTable th:nth-child(5), #goldenBootTable td:nth-child(5) {
-  width: 34px !important;
-  max-width: 34px !important;
-  min-width: 34px !important;
-  padding-left: 2px;
-  padding-right: 4px;
-  text-align: right;
-}
-#goldenBootTable .rank {
-  display: block;
-  width: 100%;
-  max-width: 24px;
-  overflow: hidden;
-  text-align: center;
-  white-space: nowrap;
-}
-#goldenBootTable .player {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-#goldenBootTable .teams-flags {
-  white-space: nowrap;
-  overflow: hidden;
-}
-#goldenBootTable .flag-only {
-  width: 1.02em;
-  min-width: 1.02em;
-  margin: 0 -1px;
-  font-size: .95rem;
-}
-
-@media (max-width: 560px) {
-  #goldenBootTable { font-size: .86rem; }
-  #goldenBootTable th { font-size: .58rem; letter-spacing: .02em; }
-  #goldenBootTable th, #goldenBootTable td { padding-top: 7px; padding-bottom: 7px; }
-  #goldenBootTable .gb-rank-col { width: 28px; max-width: 28px; }
-  #goldenBootTable .gb-teams-col { width: 58px; max-width: 58px; }
-  #goldenBootTable .gb-goals-col { width: 32px; max-width: 32px; }
-  #goldenBootTable .gb-games-col { width: 32px; max-width: 32px; }
-  #goldenBootTable th:nth-child(1), #goldenBootTable td:nth-child(1) {
-    width: 28px !important;
-    max-width: 28px !important;
-    min-width: 28px !important;
-  }
-  #goldenBootTable th:nth-child(3), #goldenBootTable td:nth-child(3) {
-    width: 58px !important;
-    max-width: 58px !important;
-    min-width: 58px !important;
-  }
-  #goldenBootTable th:nth-child(4), #goldenBootTable td:nth-child(4),
-  #goldenBootTable th:nth-child(5), #goldenBootTable td:nth-child(5) {
-    width: 32px !important;
-    max-width: 32px !important;
-    min-width: 32px !important;
-  }
-}
-
-
-/* v7: mobile-first Golden Boot table - flags live inside the Player column */
-#goldenBootTable {
-  width: 100% !important;
-  min-width: 0 !important;
-  table-layout: fixed !important;
-  font-size: 1rem;
-}
-#goldenBootTable th,
-#goldenBootTable td {
-  padding: 9px 7px;
-}
-#goldenBootTable th:nth-child(1),
-#goldenBootTable td:nth-child(1) {
-  width: 38px !important;
-  min-width: 38px !important;
-  max-width: 38px !important;
-  text-align: center;
-  padding-left: 4px;
-  padding-right: 4px;
-}
-#goldenBootTable th:nth-child(2),
-#goldenBootTable td:nth-child(2) {
-  width: auto !important;
-  min-width: 0 !important;
-}
-#goldenBootTable th:nth-child(3),
-#goldenBootTable td:nth-child(3),
-#goldenBootTable th:nth-child(4),
-#goldenBootTable td:nth-child(4) {
-  width: 44px !important;
-  min-width: 44px !important;
-  max-width: 44px !important;
-  text-align: center;
-  padding-left: 3px;
-  padding-right: 3px;
-}
-#goldenBootTable .rank {
-  display: block;
-  width: 100%;
-  max-width: 100%;
-  font-size: 1.15rem;
-  line-height: 1;
-  text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
-}
-#goldenBootTable .player {
+.goldenboot-table th,
+.goldenboot-table td {
+  padding: 8px 4px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-size: 1.02rem;
-  font-weight: 900;
 }
-#goldenBootTable .player-name {
-  margin-right: 4px;
-}
-#goldenBootTable .inline-flags {
-  white-space: nowrap;
-}
-#goldenBootTable .inline-flag {
-  display: inline;
-  font-family: 'Apple Color Emoji','Segoe UI Emoji','Noto Color Emoji', emoji, sans-serif;
-  font-size: 1.05em;
-  line-height: 1;
-}
-#goldenBootTable .goals {
-  color: var(--gold);
-  font-size: 1.18rem;
-  font-weight: 1000;
-}
-#goldenBootTable .games {
-  font-size: 1rem;
-  font-weight: 900;
-}
-@media (max-width: 560px) {
-  #goldenBootTable {
-    font-size: 1rem !important;
-  }
-  #goldenBootTable th {
-    font-size: .66rem !important;
-    letter-spacing: .03em;
-  }
-  #goldenBootTable th, #goldenBootTable td {
-    padding-top: 8px !important;
-    padding-bottom: 8px !important;
-  }
-  #goldenBootTable th:nth-child(1),
-  #goldenBootTable td:nth-child(1) {
-    width: 34px !important;
-    min-width: 34px !important;
-    max-width: 34px !important;
-  }
-  #goldenBootTable th:nth-child(3),
-  #goldenBootTable td:nth-child(3),
-  #goldenBootTable th:nth-child(4),
-  #goldenBootTable td:nth-child(4) {
-    width: 40px !important;
-    min-width: 40px !important;
-    max-width: 40px !important;
-  }
-  #goldenBootTable .player {
-    font-size: 1rem !important;
-  }
-  #goldenBootTable .goals {
-    font-size: 1.18rem !important;
-  }
-}
-@media (max-width: 380px) {
-  #goldenBootTable .player { font-size: .94rem !important; }
-  #goldenBootTable th:nth-child(3),
-  #goldenBootTable td:nth-child(3),
-  #goldenBootTable th:nth-child(4),
-  #goldenBootTable td:nth-child(4) {
-    width: 36px !important;
-    min-width: 36px !important;
-    max-width: 36px !important;
-  }
-}
+.goldenboot-table .col-rank { width: var(--gb-rank); text-align: center; }
+.goldenboot-table .col-player { width: var(--gb-player); }
+.goldenboot-table .col-teams { width: var(--gb-teams); text-align: center; }
+.goldenboot-table .col-goals,
+.goldenboot-table .col-games { width: var(--gb-score); text-align: center; }
+.goldenboot-table .team-flags { font-size: 17px; letter-spacing: 0; }
+.goldenboot-table col.gb-rank { width: var(--gb-rank); }
+.goldenboot-table col.gb-player { width: var(--gb-player); }
+.goldenboot-table col.gb-teams { width: var(--gb-teams); }
+.goldenboot-table col.gb-score { width: var(--gb-score); }
 
-/* v8 FINAL: stable Golden Boot table reset */
-#goldenBootTable {
-  width: 100% !important;
-  min-width: 0 !important;
-  table-layout: auto !important;
-  border-collapse: collapse;
-}
-#goldenBootTable th,
-#goldenBootTable td {
-  padding: 10px 8px !important;
-  white-space: nowrap;
-  vertical-align: middle;
-}
-#goldenBootTable th:nth-child(1),
-#goldenBootTable td:nth-child(1) {
-  width: 48px !important;
-  min-width: 48px !important;
-  max-width: 48px !important;
-  text-align: center !important;
-}
-#goldenBootTable th:nth-child(2),
-#goldenBootTable td:nth-child(2) {
-  width: auto !important;
-  min-width: 92px !important;
-  max-width: none !important;
-  text-align: left !important;
-  overflow: visible !important;
-  text-overflow: clip !important;
-}
-#goldenBootTable th:nth-child(3),
-#goldenBootTable td:nth-child(3) {
-  width: 110px !important;
-  min-width: 110px !important;
-  max-width: 110px !important;
-  text-align: center !important;
-}
-#goldenBootTable th:nth-child(4),
-#goldenBootTable td:nth-child(4),
-#goldenBootTable th:nth-child(5),
-#goldenBootTable td:nth-child(5) {
-  width: 54px !important;
-  min-width: 54px !important;
-  max-width: 54px !important;
-  text-align: center !important;
-}
-#goldenBootTable .rank {
-  display: table-cell !important;
-  width: 48px !important;
-  max-width: 48px !important;
-  overflow: hidden !important;
-  text-align: center !important;
-  color: var(--gold);
-  font-size: 1rem !important;
-  line-height: 1.1;
-}
-#goldenBootTable .player {
-  font-size: 1rem !important;
-  font-weight: 900;
-}
-#goldenBootTable .teams {
-  letter-spacing: 0 !important;
-  word-spacing: 2px;
-  overflow: visible !important;
-}
-#goldenBootTable .gb-flag {
-  display: inline-block;
-  font-family: 'Apple Color Emoji','Segoe UI Emoji','Noto Color Emoji', emoji, sans-serif;
-  font-size: 1.05rem;
-  line-height: 1;
-  margin: 0 1px;
-}
-#goldenBootTable .goals,
-#goldenBootTable .games {
-  font-weight: 1000;
-  font-size: 1rem !important;
-}
-#goldenBootTable .goals { color: var(--gold); }
+.banter { display: grid; gap: 10px; }
+.banter-item { padding: 12px; border-radius: 14px; background: rgba(255,255,255,.05); color: #edf5ef; }
+.scores, .groups { display: grid; gap: 10px; }
+.score-row, .group-card { padding: 12px; border: 1px solid var(--line); border-radius: 14px; background: rgba(255,255,255,.035); }
+.score-row { display: flex; justify-content: space-between; gap: 12px; align-items: center; }
+.group-card h3 { margin: 0 0 8px; }
+.footer { color: var(--muted); text-align: center; padding: 28px 0 40px; }
 
-@media (max-width: 700px) {
-  main, footer { padding-left: 12px; padding-right: 12px; }
-  .card { padding: 14px; }
-  .table-wrap { overflow-x: visible; }
-  #goldenBootTable { font-size: .9rem !important; }
-  #goldenBootTable th { font-size: .64rem !important; letter-spacing: .04em; }
-  #goldenBootTable th,
-  #goldenBootTable td { padding: 8px 5px !important; }
-  #goldenBootTable th:nth-child(1),
-  #goldenBootTable td:nth-child(1),
-  #goldenBootTable .rank {
-    width: 34px !important;
-    min-width: 34px !important;
-    max-width: 34px !important;
-  }
-  #goldenBootTable th:nth-child(2),
-  #goldenBootTable td:nth-child(2) {
-    min-width: 76px !important;
-  }
-  #goldenBootTable th:nth-child(3),
-  #goldenBootTable td:nth-child(3) {
-    width: 82px !important;
-    min-width: 82px !important;
-    max-width: 82px !important;
-  }
-  #goldenBootTable th:nth-child(4),
-  #goldenBootTable td:nth-child(4),
-  #goldenBootTable th:nth-child(5),
-  #goldenBootTable td:nth-child(5) {
-    width: 36px !important;
-    min-width: 36px !important;
-    max-width: 36px !important;
-  }
-  #goldenBootTable .player { font-size: .94rem !important; }
-  #goldenBootTable .gb-flag { font-size: .94rem; margin: 0; }
-}
+@media (max-width: 760px) {
+  .container { width: min(430px, calc(100% - 18px)); }
+  .cards { grid-template-columns: 1fr 1fr; }
+  .two { grid-template-columns: 1fr; }
+  .card { padding: 12px; border-radius: 16px; }
+  h2 { font-size: 19px; }
+  th, td { padding: 8px 5px; font-size: 13px; }
 
-@media (max-width: 380px) {
-  #goldenBootTable th,
-  #goldenBootTable td { padding-left: 4px !important; padding-right: 4px !important; }
-  #goldenBootTable th:nth-child(3),
-  #goldenBootTable td:nth-child(3) {
-    width: 76px !important;
-    min-width: 76px !important;
-    max-width: 76px !important;
-  }
-  #goldenBootTable th:nth-child(4),
-  #goldenBootTable td:nth-child(4),
-  #goldenBootTable th:nth-child(5),
-  #goldenBootTable td:nth-child(5) {
-    width: 34px !important;
-    min-width: 34px !important;
-    max-width: 34px !important;
-  }
-}
-
-
-/* v10 FINAL: Golden Boot stable, mobile-first 4-column layout */
-.golden-card {
-  max-width: 760px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.golden-card .table-wrap {
-  overflow-x: visible !important;
-  max-width: 100%;
-}
-#goldenBootTable {
-  width: 100% !important;
-  min-width: 0 !important;
-  table-layout: fixed !important;
-  border-collapse: collapse;
-}
-#goldenBootTable th,
-#goldenBootTable td {
-  box-sizing: border-box;
-  white-space: nowrap;
-  vertical-align: middle;
-  padding: 9px 8px !important;
-}
-#goldenBootTable th:nth-child(1),
-#goldenBootTable td:nth-child(1) {
-  width: 44px !important;
-  min-width: 44px !important;
-  max-width: 44px !important;
-  text-align: center !important;
-}
-#goldenBootTable th:nth-child(2),
-#goldenBootTable td:nth-child(2) {
-  width: auto !important;
-  min-width: 0 !important;
-  max-width: none !important;
-  text-align: left !important;
-  overflow: hidden !important;
-}
-#goldenBootTable th:nth-child(3),
-#goldenBootTable td:nth-child(3),
-#goldenBootTable th:nth-child(4),
-#goldenBootTable td:nth-child(4) {
-  width: 48px !important;
-  min-width: 48px !important;
-  max-width: 48px !important;
-  text-align: center !important;
-}
-#goldenBootTable .rank {
-  display: block !important;
-  width: 100% !important;
-  max-width: 100% !important;
-  text-align: center !important;
-  color: var(--gold);
-  font-weight: 1000;
-  overflow: hidden !important;
-  text-overflow: clip !important;
-}
-#goldenBootTable .player {
-  font-weight: 900;
-  overflow: hidden !important;
-  text-overflow: ellipsis !important;
-}
-#goldenBootTable .player-name {
-  margin-right: 8px;
-}
-#goldenBootTable .teams-inline {
-  white-space: nowrap;
-  font-weight: 400;
-}
-#goldenBootTable .gb-flag {
-  display: inline-block;
-  font-family: 'Apple Color Emoji','Segoe UI Emoji','Noto Color Emoji', emoji, sans-serif;
-  font-size: 1rem;
-  line-height: 1;
-  margin-right: 2px;
-}
-#goldenBootTable .goals,
-#goldenBootTable .games {
-  font-weight: 1000;
-  font-size: 1.05rem !important;
-}
-#goldenBootTable .goals { color: var(--gold); }
-
-@media (max-width: 700px) {
-  .golden-card {
-    max-width: none;
-    width: 100%;
-    padding: 14px;
-  }
-  #goldenBootTable th,
-  #goldenBootTable td {
-    padding: 8px 6px !important;
-  }
-  #goldenBootTable th {
-    font-size: .62rem !important;
-    letter-spacing: .03em;
-  }
-  #goldenBootTable th:nth-child(1),
-  #goldenBootTable td:nth-child(1) {
-    width: 38px !important;
-    min-width: 38px !important;
-    max-width: 38px !important;
-  }
-  #goldenBootTable th:nth-child(3),
-  #goldenBootTable td:nth-child(3),
-  #goldenBootTable th:nth-child(4),
-  #goldenBootTable td:nth-child(4) {
-    width: 38px !important;
-    min-width: 38px !important;
-    max-width: 38px !important;
-  }
-  #goldenBootTable .player {
-    font-size: .95rem !important;
-  }
-  #goldenBootTable .player-name {
-    margin-right: 5px;
-  }
-  #goldenBootTable .gb-flag {
-    font-size: .94rem;
-    margin-right: 1px;
-  }
-  #goldenBootTable .goals,
-  #goldenBootTable .games {
-    font-size: 1rem !important;
-  }
-}
-
-@media (max-width: 380px) {
-  #goldenBootTable th,
-  #goldenBootTable td {
-    padding-left: 4px !important;
-    padding-right: 4px !important;
-  }
-  #goldenBootTable th:nth-child(1),
-  #goldenBootTable td:nth-child(1) {
-    width: 34px !important;
-    min-width: 34px !important;
-    max-width: 34px !important;
-  }
-  #goldenBootTable th:nth-child(3),
-  #goldenBootTable td:nth-child(3),
-  #goldenBootTable th:nth-child(4),
-  #goldenBootTable td:nth-child(4) {
-    width: 34px !important;
-    min-width: 34px !important;
-    max-width: 34px !important;
-  }
-  #goldenBootTable .player { font-size: .9rem !important; }
-  #goldenBootTable .gb-flag { font-size: .9rem; }
-}
-
-/* v11 FINAL: Golden Boot stable 5-column mobile table.
-   Tweak these variables if you want to adjust the mobile width. */
-:root {
-    --gb-mobile-rank: 28px;
-    --gb-mobile-player: 84px;
-    --gb-mobile-teams: 70px;
-    --gb-mobile-score: 34px;
-}
-
-#goldenBootTable {
-  width: 100% !important;
-  min-width: 0 !important;
-  table-layout: fixed !important;
-}
-
-#goldenBootTable th,
-#goldenBootTable td {
-  white-space: nowrap !important;
-  vertical-align: middle !important;
-  overflow: hidden !important;
-}
-
-#goldenBootTable th:nth-child(1),
-#goldenBootTable td:nth-child(1) {
-  width: 48px !important;
-  min-width: 48px !important;
-  max-width: 48px !important;
-  text-align: center !important;
-}
-
-#goldenBootTable th:nth-child(2),
-#goldenBootTable td:nth-child(2) {
-  width: auto !important;
-  min-width: 110px !important;
-  max-width: none !important;
-  text-align: left !important;
-}
-
-#goldenBootTable th:nth-child(3),
-#goldenBootTable td:nth-child(3) {
-  width: 116px !important;
-  min-width: 116px !important;
-  max-width: 116px !important;
-  text-align: center !important;
-}
-
-#goldenBootTable th:nth-child(4),
-#goldenBootTable td:nth-child(4),
-#goldenBootTable th:nth-child(5),
-#goldenBootTable td:nth-child(5) {
-  width: 52px !important;
-  min-width: 52px !important;
-  max-width: 52px !important;
-  text-align: center !important;
-}
-
-#goldenBootTable .rank {
-  color: var(--gold) !important;
-  font-weight: 1000 !important;
-}
-
-#goldenBootTable .player {
-  font-weight: 900 !important;
-  text-overflow: ellipsis !important;
-}
-
-#goldenBootTable .teams {
-  text-align: center !important;
-  letter-spacing: 0 !important;
-}
-
-#goldenBootTable .gb-flag {
-  display: inline-block !important;
-  font-family: 'Apple Color Emoji','Segoe UI Emoji','Noto Color Emoji', emoji, sans-serif !important;
-  font-size: 1.05rem !important;
-  line-height: 1 !important;
-  margin: 0 1px !important;
-}
-
-#goldenBootTable .goals,
-#goldenBootTable .games {
-  font-weight: 1000 !important;
-}
-
-#goldenBootTable .goals { color: var(--gold) !important; }
-
-@media (max-width: 700px) {
-  .table-wrap { overflow-x: visible !important; }
-
-  #goldenBootTable {
-    font-size: .88rem !important;
-  }
-
-  #goldenBootTable th {
-    font-size: .62rem !important;
-    letter-spacing: .02em !important;
-  }
-
-  #goldenBootTable th,
-  #goldenBootTable td {
-    padding: 7px 4px !important;
-  }
-
-  #goldenBootTable th:nth-child(1),
-  #goldenBootTable td:nth-child(1) {
-    width: var(--gb-mobile-rank) !important;
-    min-width: var(--gb-mobile-rank) !important;
-    max-width: var(--gb-mobile-rank) !important;
-  }
-
-  #goldenBootTable th:nth-child(2),
-  #goldenBootTable td:nth-child(2) {
-    width: var(--gb-mobile-player) !important;
-    min-width: var(--gb-mobile-player) !important;
-    max-width: var(--gb-mobile-player) !important;
-  }
-
-  #goldenBootTable th:nth-child(3),
-  #goldenBootTable td:nth-child(3) {
-    width: var(--gb-mobile-teams) !important;
-    min-width: var(--gb-mobile-teams) !important;
-    max-width: var(--gb-mobile-teams) !important;
-  }
-
-  #goldenBootTable th:nth-child(4),
-  #goldenBootTable td:nth-child(4),
-  #goldenBootTable th:nth-child(5),
-  #goldenBootTable td:nth-child(5) {
-    width: var(--gb-mobile-score) !important;
-    min-width: var(--gb-mobile-score) !important;
-    max-width: var(--gb-mobile-score) !important;
-  }
-
-  #goldenBootTable .gb-flag {
-    font-size: .95rem !important;
-    margin: 0 1px !important;
-  }
-}
-
-@media (max-width: 236px) {
   :root {
-    --gb-mobile-rank: 28px;
-    --gb-mobile-player: 84px;
-    --gb-mobile-teams: 70px;
-    --gb-mobile-score: 34px;
+    --gb-rank: 30px;
+    --gb-player: 92px;
+    --gb-teams: 78px;
+    --gb-score: 32px;
   }
-
-  #goldenBootTable { font-size: .82rem !important; }
-  #goldenBootTable .gb-flag { font-size: .88rem !important; margin: 0 !important; }
-}
-
-@media (max-width: 600px) {
-  table,
-  .table-wrap table,
-  .leaderboard-table,
-  .goldenboot-table {
-    min-width: 0 !important;
-  }
-
-  .table-wrap,
-  .table-scroll,
-  .leaderboard-wrap {
-    min-width: 0 !important;
-    max-width: 100% !important;
-    overflow-x: visible !important;
-  }
+  .golden-card { max-width: 100%; }
+  .goldenboot-table th,
+  .goldenboot-table td { padding: 7px 3px; font-size: 12px; }
+  .goldenboot-table .team-flags { font-size: 16px; }
 }

@@ -1,82 +1,21 @@
-# Family World Cup Sweepstake HQ
+# Family World Cup Sweepstake
 
-Static GitHub Pages website for the family World Cup sweepstake.
+Clean rebuild with one clear Golden Boot CSS section.
 
-## What it does
+## Golden Boot column widths
 
-- Golden Boot leaderboard: total goals scored by each player's 3 teams.
-- Best Average Team leaderboard: Tier 2 teams ranked by points, goal difference, goals for, games played.
-- Current leader banner, wooden spoon watch, carrying-job stats, and automatic banter.
-- Full player allocations with search.
-- Completed scores section.
-- World Cup group standings, ranked by points, goal difference, and goals for.
-- Team goals tracker.
-- Uses the actual England and Scotland subdivision emoji sequences in the data.
-- Updates `data/results.json` automatically every hour using GitHub Actions.
-
-## Setup on GitHub Pages
-
-1. Upload all files from this folder to your `worldcup-sweepstake` repo.
-2. Go to **Settings → Pages**.
-3. Under **Build and deployment**, choose:
-   - Source: **Deploy from a branch**
-   - Branch: **main**
-   - Folder: **/ (root)**
-4. Save.
-5. Your site should appear at:
-   `https://zburjony.github.io/worldcup-sweepstake/`
-
-## Automatic updates
-
-The workflow is in `.github/workflows/update-results.yml`.
-
-It runs every hour using GitHub Actions cron:
-
-- `0 * * * *` = at the start of every hour
-
-You can also run it manually from **Actions → Update World Cup results → Run workflow**.
-
-## Data source
-
-The script tries to fetch completed matches from:
-
-`https://worldcup26.ir/get/games`
-
-If the API is unavailable, it falls back to the initial score set included in the repo so the site still loads.
-
-## Change update times
-
-Edit `.github/workflows/update-results.yml` and adjust the cron lines. GitHub cron uses UTC.
-
-
-## v4 update
-- GitHub Actions now runs hourly.
-- Golden Boot table is mobile-friendly: no G/G column and teams show as flag + three-letter code.
-
-## v11 final Golden Boot mobile tuning
-The Golden Boot table is back to five columns: `# | Player | Teams | ⚽ | GP`.
-Flags are in their own Teams column.
-
-To tweak mobile widths, edit `styles.css` and search for:
+Edit `styles.css` and change only these values:
 
 ```css
---gb-mobile-rank
---gb-mobile-player
---gb-mobile-teams
---gb-mobile-score
+--gb-rank: 34px;
+--gb-player: 100px;
+--gb-teams: 82px;
+--gb-score: 34px;
 ```
 
-These control the mobile Golden Boot column widths.
+Mobile values are lower down inside the `@media (max-width: 760px)` block.
 
+## Automation
 
-## v12 automation fix
-
-The live site timestamp comes from `data/results.json` → `generatedAt`.
-
-The GitHub Action now runs `npm run update`, which rewrites `data/results.json` and updates `generatedAt`. It does not use `data/last-updated.txt`.
-
-If the hidden `.github` folder does not upload from your computer, create this file manually in GitHub:
-
-`.github/workflows/update-results.yml`
-
-Then paste the contents of `UPDATE_WORKFLOW_COPY_PASTE.yml`.
+The workflow is at `.github/workflows/update-results.yml` and runs hourly plus manual `Run workflow`.
+It currently updates `data/results.json -> generatedAt`.
