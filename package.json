@@ -1,0 +1,11 @@
+{
+  "name": "worldcup-sweepstake",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "update": "node scripts/update-results.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

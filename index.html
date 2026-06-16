@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Family World Cup Sweepstake</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div>
+      <p class="eyebrow">Family World Cup Sweepstake</p>
+      <h1>🏆 Sweepstake HQ</h1>
+      <p class="subtitle">Live-ish leaderboards, prize tracking, and everyone’s teams in one place.</p>
+    </div>
+    <div class="prizes">
+      <div><strong>$80</strong><span>Winner</span></div>
+      <div><strong>$25</strong><span>Best Average Team</span></div>
+      <div><strong>$15</strong><span>Golden Boot</span></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="status-card">
+      <div>
+        <span class="label">Last updated</span>
+        <strong id="lastUpdated">Loading…</strong>
+      </div>
+      <div>
+        <span class="label">Completed matches counted</span>
+        <strong id="matchCount">—</strong>
+      </div>
+      <div>
+        <span class="label">Data source</span>
+        <strong id="dataSource">—</strong>
+      </div>
+    </section>
+
+    <section class="grid two">
+      <article class="card">
+        <div class="card-head">
+          <h2>⚽ Golden Boot</h2>
+          <p>Combined goals from each player’s 3 teams.</p>
+        </div>
+        <div class="table-wrap">
+          <table id="goldenBootTable">
+            <thead><tr><th>Rank</th><th>Player</th><th>Teams</th><th>Goals</th><th>Games</th><th>G/G</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <h2>🥈 Best Average Team</h2>
+          <p>Tier 2 team tracker. Sorted by points, goal difference, then goals.</p>
+        </div>
+        <div class="table-wrap">
+          <table id="averageTable">
+            <thead><tr><th>Rank</th><th>Player</th><th>Team</th><th>Pts</th><th>GD</th><th>GF</th><th>GP</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </article>
+    </section>
+
+    <section class="card">
+      <div class="card-head row">
+        <div>
+          <h2>👥 Full Draw</h2>
+          <p>Teams are shown Tier 1, Tier 2, Tier 3.</p>
+        </div>
+        <input id="search" placeholder="Search player or team…" />
+      </div>
+      <div class="table-wrap">
+        <table id="drawTable">
+          <thead><tr><th>Player</th><th>Tier 1</th><th>Tier 2</th><th>Tier 3</th><th>Total Goals</th><th>Games</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card-head">
+        <h2>📊 Team Goals</h2>
+        <p>Every team used in the sweepstake, updated from completed matches.</p>
+      </div>
+      <div class="team-grid" id="teamGrid"></div>
+    </section>
+  </main>
+
+  <footer>
+    Full rules available on request. All complaints must be lodged before kick-off and will be ignored thereafter.
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
