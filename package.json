@@ -3,6 +3,6 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "update": "node scripts/update-results.js"
+    "update": "node scripts/update-results.mjs"
   }
 }
