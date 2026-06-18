@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T18:35:58.961Z",
+  "generatedAt": "2026-06-18T21:28:29.595Z",
   "players": [
     {
       "name": "Johnny",
@@ -303,10 +303,10 @@
     "SUI": {
       "name": "Switzerland",
       "flag": "🇨🇭",
-      "goalsFor": 1,
-      "goalsAgainst": 1,
-      "played": 1,
-      "points": 1,
+      "goalsFor": 5,
+      "goalsAgainst": 2,
+      "played": 2,
+      "points": 4,
       "group": "B"
     },
     "IRN": {
@@ -429,10 +429,10 @@
     "CZE": {
       "name": "Czechia",
       "flag": "🇨🇿",
-      "goalsFor": 1,
-      "goalsAgainst": 2,
-      "played": 1,
-      "points": 0,
+      "goalsFor": 2,
+      "goalsAgainst": 3,
+      "played": 2,
+      "points": 1,
       "group": "A"
     },
     "PAR": {
@@ -501,10 +501,10 @@
     "RSA": {
       "name": "South Africa",
       "flag": "🇿🇦",
-      "goalsFor": 0,
-      "goalsAgainst": 2,
-      "played": 1,
-      "points": 0,
+      "goalsFor": 1,
+      "goalsAgainst": 3,
+      "played": 2,
+      "points": 1,
       "group": "A"
     },
     "KSA": {
@@ -528,9 +528,9 @@
     "BIH": {
       "name": "Bosnia & Herzegovina",
       "flag": "🇧🇦",
-      "goalsFor": 1,
-      "goalsAgainst": 1,
-      "played": 1,
+      "goalsFor": 2,
+      "goalsAgainst": 5,
+      "played": 2,
       "points": 1,
       "group": "B"
     },
@@ -820,14 +820,34 @@
       "homeGoals": 1,
       "awayGoals": 3,
       "status": "FT"
+    },
+    {
+      "id": "26",
+      "date": "06/18/2026 12:00",
+      "group": "B",
+      "home": "SUI",
+      "away": "BIH",
+      "homeGoals": 4,
+      "awayGoals": 1,
+      "status": "FT"
+    },
+    {
+      "id": "28",
+      "date": "06/18/2026 12:00",
+      "group": "A",
+      "home": "CZE",
+      "away": "RSA",
+      "homeGoals": 1,
+      "awayGoals": 1,
+      "status": "FT"
     }
   ],
-  "source": "last result and fallback-in-repo",
-  "sourceOk": false,
+  "source": "https://worldcup26.ir/get/games",
+  "sourceOk": true,
   "banter": [
-    "Sofia is currently pretending this was always part of the plan.",
-    "🇩🇪 GER is carrying Ruby harder than airport luggage.",
-    "Ollie may need to apologise to 🇸🇪 SWE for calling them average.",
-    "VAR has reviewed the sweepstake and confirmed everyone should calm down."
+    "Sofia has moved into “checking the prize money” territory.",
+    "🇩🇪 GER has put Ruby's sweepstake campaign on its back.",
+    "🇨🇭 SUI has quietly entered the “not so average” conversation for Sofia.",
+    "This leaderboard is temporary, but the group chat abuse is forever."
   ]
 }
