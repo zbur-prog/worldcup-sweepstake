@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-20T00:20:17.348Z",
+  "generatedAt": "2026-06-20T05:43:42.220Z",
   "players": [
     {
       "name": "Johnny",
@@ -195,10 +195,10 @@
     "BRA": {
       "name": "Brazil",
       "flag": "🇧🇷",
-      "goalsFor": 1,
+      "goalsFor": 4,
       "goalsAgainst": 1,
-      "played": 1,
-      "points": 1,
+      "played": 2,
+      "points": 4,
       "group": "C"
     },
     "GER": {
@@ -322,8 +322,8 @@
       "name": "Türkiye",
       "flag": "🇹🇷",
       "goalsFor": 0,
-      "goalsAgainst": 2,
-      "played": 1,
+      "goalsAgainst": 3,
+      "played": 2,
       "points": 0,
       "group": "D"
     },
@@ -438,10 +438,10 @@
     "PAR": {
       "name": "Paraguay",
       "flag": "🇵🇾",
-      "goalsFor": 1,
+      "goalsFor": 2,
       "goalsAgainst": 4,
-      "played": 1,
-      "points": 0,
+      "played": 2,
+      "points": 3,
       "group": "D"
     },
     "SCO": {
@@ -565,8 +565,8 @@
       "name": "Haiti",
       "flag": "🇭🇹",
       "goalsFor": 0,
-      "goalsAgainst": 1,
-      "played": 1,
+      "goalsAgainst": 4,
+      "played": 2,
       "points": 0,
       "group": "C"
     },
@@ -880,14 +880,34 @@
       "homeGoals": 0,
       "awayGoals": 1,
       "status": "FT"
+    },
+    {
+      "id": "32",
+      "date": "06/19/2026 20:00",
+      "group": "D",
+      "home": "TUR",
+      "away": "PAR",
+      "homeGoals": 0,
+      "awayGoals": 1,
+      "status": "FT"
+    },
+    {
+      "id": "29",
+      "date": "06/19/2026 21:00",
+      "group": "C",
+      "home": "BRA",
+      "away": "HTI",
+      "homeGoals": 3,
+      "awayGoals": 0,
+      "status": "FT"
     }
   ],
   "source": "https://worldcup26.ir/get/games",
   "sourceOk": true,
   "banter": [
-    "Sofia is currently pretending this was always part of the plan.",
-    "🇨🇦 CAN has put Harper's sweepstake campaign on its back.",
-    "🇺🇸 USA is making the Average Team prize look very spicy for Fernando.",
-    "The organiser accepts no responsibility for football, maths, or hurt feelings."
+    "Sofia has moved into “checking the prize money” territory.",
+    "🇨🇦 CAN is carrying Harper harder than airport luggage.",
+    "Fernando may need to apologise to 🇺🇸 USA for calling them average.",
+    "VAR has reviewed the sweepstake and confirmed everyone should calm down."
   ]
 }
