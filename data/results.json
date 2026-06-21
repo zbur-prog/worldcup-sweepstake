@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T21:41:46.146Z",
+  "generatedAt": "2026-06-21T23:44:17.631Z",
   "players": [
     {
       "name": "Johnny",
@@ -168,10 +168,10 @@
     "ESP": {
       "name": "Spain",
       "flag": "🇪🇸",
-      "goalsFor": 0,
+      "goalsFor": 4,
       "goalsAgainst": 0,
-      "played": 1,
-      "points": 1,
+      "played": 2,
+      "points": 4,
       "group": "H"
     },
     "FRA": {
@@ -188,8 +188,8 @@
       "flag": "🇧🇪",
       "goalsFor": 1,
       "goalsAgainst": 1,
-      "played": 1,
-      "points": 1,
+      "played": 2,
+      "points": 2,
       "group": "G"
     },
     "BRA": {
@@ -314,8 +314,8 @@
       "flag": "🇮🇷",
       "goalsFor": 2,
       "goalsAgainst": 2,
-      "played": 1,
-      "points": 1,
+      "played": 2,
+      "points": 2,
       "group": "G"
     },
     "TUR": {
@@ -511,8 +511,8 @@
       "name": "Saudi Arabia",
       "flag": "🇸🇦",
       "goalsFor": 1,
-      "goalsAgainst": 1,
-      "played": 1,
+      "goalsAgainst": 5,
+      "played": 2,
       "points": 1,
       "group": "H"
     },
@@ -940,14 +940,34 @@
       "homeGoals": 0,
       "awayGoals": 4,
       "status": "FT"
+    },
+    {
+      "id": "37",
+      "date": "06/21/2026 12:00",
+      "group": "G",
+      "home": "BEL",
+      "away": "IRN",
+      "homeGoals": 0,
+      "awayGoals": 0,
+      "status": "FT"
+    },
+    {
+      "id": "39",
+      "date": "06/21/2026 12:00",
+      "group": "H",
+      "home": "ESP",
+      "away": "KSA",
+      "homeGoals": 4,
+      "awayGoals": 0,
+      "status": "FT"
     }
   ],
-  "source": "last result and fallback-in-repo",
-  "sourceOk": false,
+  "source": "https://worldcup26.ir/get/games",
+  "sourceOk": true,
   "banter": [
-    "Sofia has started acting like a tactical genius. We are monitoring the situation.",
-    "🇩🇪 GER is responsible for 100% of Ruby's goals. That is not teamwork, that is outsourcing.",
-    "🇺🇸 USA is making the Average Team prize look very spicy for Fernando.",
-    "All complaints about the draw remain formally ignored."
+    "Sofia is currently pretending this was always part of the plan.",
+    "Ruby owes 🇩🇪 GER a thank-you card at this point.",
+    "🇺🇸 USA has quietly entered the “not so average” conversation for Fernando.",
+    "If your team has not played yet, congratulations: hope remains undefeated."
   ]
 }
