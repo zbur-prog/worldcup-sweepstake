@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T00:21:06.894Z",
+  "generatedAt": "2026-06-21T06:18:11.767Z",
   "players": [
     {
       "name": "Johnny",
@@ -294,10 +294,10 @@
     "JPN": {
       "name": "Japan",
       "flag": "🇯🇵",
-      "goalsFor": 2,
+      "goalsFor": 6,
       "goalsAgainst": 2,
-      "played": 1,
-      "points": 1,
+      "played": 2,
+      "points": 4,
       "group": "F"
     },
     "SUI": {
@@ -332,8 +332,8 @@
       "flag": "🇪🇨",
       "goalsFor": 0,
       "goalsAgainst": 1,
-      "played": 1,
-      "points": 0,
+      "played": 2,
+      "points": 1,
       "group": "E"
     },
     "AUT": {
@@ -466,8 +466,8 @@
       "name": "Tunisia",
       "flag": "🇹🇳",
       "goalsFor": 1,
-      "goalsAgainst": 5,
-      "played": 1,
+      "goalsAgainst": 9,
+      "played": 2,
       "points": 0,
       "group": "F"
     },
@@ -557,8 +557,8 @@
       "flag": "🇨🇼",
       "goalsFor": 1,
       "goalsAgainst": 7,
-      "played": 1,
-      "points": 0,
+      "played": 2,
+      "points": 1,
       "group": "E"
     },
     "HTI": {
@@ -920,14 +920,34 @@
       "homeGoals": 2,
       "awayGoals": 1,
       "status": "FT"
+    },
+    {
+      "id": "34",
+      "date": "06/20/2026 19:00",
+      "group": "E",
+      "home": "ECU",
+      "away": "CUW",
+      "homeGoals": 0,
+      "awayGoals": 0,
+      "status": "FT"
+    },
+    {
+      "id": "36",
+      "date": "06/20/2026 22:00",
+      "group": "F",
+      "home": "TUN",
+      "away": "JPN",
+      "homeGoals": 0,
+      "awayGoals": 4,
+      "status": "FT"
     }
   ],
-  "source": "last result and fallback-in-repo",
-  "sourceOk": false,
+  "source": "https://worldcup26.ir/get/games",
+  "sourceOk": true,
   "banter": [
-    "Sofia leads the Golden Boot race with 15 goals from 6 games.",
-    "🇩🇪 GER is doing the heavy lifting while Ruby's other teams enjoy the view.",
-    "Fernando may need to apologise to 🇺🇸 USA for calling them average.",
-    "The organiser accepts no responsibility for football, maths, or hurt feelings."
+    "Sofia has started acting like a tactical genius. We are monitoring the situation.",
+    "🇩🇪 GER is carrying Ruby harder than airport luggage.",
+    "Fernando's average team, 🇺🇸 USA, is doing suspiciously well.",
+    "VAR has reviewed the sweepstake and confirmed everyone should calm down."
   ]
 }
