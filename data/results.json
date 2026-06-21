@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T16:10:26.170Z",
+  "generatedAt": "2026-06-21T17:51:26.633Z",
   "players": [
     {
       "name": "Johnny",
@@ -942,12 +942,12 @@
       "status": "FT"
     }
   ],
-  "source": "https://worldcup26.ir/get/games",
-  "sourceOk": true,
+  "source": "last result and fallback-in-repo",
+  "sourceOk": false,
   "banter": [
-    "Sofia is currently pretending this was always part of the plan.",
-    "🇩🇪 GER is carrying Ruby harder than airport luggage.",
-    "🇺🇸 USA has quietly entered the “not so average” conversation for Fernando.",
-    "This leaderboard is temporary, but the group chat abuse is forever."
+    "Sofia has moved into “checking the prize money” territory.",
+    "Ruby owes 🇩🇪 GER a thank-you card at this point.",
+    "Fernando may need to apologise to 🇺🇸 USA for calling them average.",
+    "If your team has not played yet, congratulations: hope remains undefeated."
   ]
 }
