@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-23T20:22:25.824Z",
+  "generatedAt": "2026-06-23T22:37:48.575Z",
   "players": [
     {
       "name": "Johnny",
@@ -161,8 +161,8 @@
       "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
       "goalsFor": 4,
       "goalsAgainst": 2,
-      "played": 1,
-      "points": 3,
+      "played": 2,
+      "points": 4,
       "group": "L"
     },
     "ESP": {
@@ -548,8 +548,8 @@
       "flag": "🇬🇭",
       "goalsFor": 1,
       "goalsAgainst": 0,
-      "played": 1,
-      "points": 3,
+      "played": 2,
+      "points": 4,
       "group": "L"
     },
     "CUW": {
@@ -1030,14 +1030,24 @@
       "homeGoals": 5,
       "awayGoals": 0,
       "status": "FT"
+    },
+    {
+      "id": "48",
+      "date": "06/23/2026 16:00",
+      "group": "L",
+      "home": "ENG",
+      "away": "GHA",
+      "homeGoals": 0,
+      "awayGoals": 0,
+      "status": "FT"
     }
   ],
   "source": "https://worldcup26.ir/get/games",
   "sourceOk": true,
   "banter": [
-    "Sofia is top of the table and absolutely not being humble about it.",
-    "🇵🇹 POR has put Mena's sweepstake campaign on its back.",
-    "Nadine's average team, 🇳🇴 NOR, is doing suspiciously well.",
-    "The organiser accepts no responsibility for football, maths, or hurt feelings."
+    "Sofia has started acting like a tactical genius. We are monitoring the situation.",
+    "🇵🇹 POR is carrying Mena harder than airport luggage.",
+    "Nadine may need to apologise to 🇳🇴 NOR for calling them average.",
+    "This leaderboard is temporary, but the group chat abuse is forever."
   ]
 }
