@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-25T00:21:23.010Z",
+  "generatedAt": "2026-06-25T05:15:13.490Z",
   "players": [
     {
       "name": "Johnny",
@@ -258,10 +258,10 @@
     "MEX": {
       "name": "Mexico",
       "flag": "🇲🇽",
-      "goalsFor": 3,
+      "goalsFor": 6,
       "goalsAgainst": 0,
-      "played": 2,
-      "points": 6,
+      "played": 3,
+      "points": 9,
       "group": "A"
     },
     "SEN": {
@@ -349,8 +349,8 @@
       "name": "South Korea",
       "flag": "🇰🇷",
       "goalsFor": 2,
-      "goalsAgainst": 2,
-      "played": 2,
+      "goalsAgainst": 3,
+      "played": 3,
       "points": 3,
       "group": "A"
     },
@@ -430,8 +430,8 @@
       "name": "Czechia",
       "flag": "🇨🇿",
       "goalsFor": 2,
-      "goalsAgainst": 3,
-      "played": 2,
+      "goalsAgainst": 6,
+      "played": 3,
       "points": 1,
       "group": "A"
     },
@@ -501,10 +501,10 @@
     "RSA": {
       "name": "South Africa",
       "flag": "🇿🇦",
-      "goalsFor": 1,
+      "goalsFor": 2,
       "goalsAgainst": 3,
-      "played": 2,
-      "points": 1,
+      "played": 3,
+      "points": 4,
       "group": "A"
     },
     "KSA": {
@@ -1100,14 +1100,34 @@
       "homeGoals": 4,
       "awayGoals": 2,
       "status": "FT"
+    },
+    {
+      "id": "51",
+      "date": "06/24/2026 19:00",
+      "group": "A",
+      "home": "RSA",
+      "away": "KOR",
+      "homeGoals": 1,
+      "awayGoals": 0,
+      "status": "FT"
+    },
+    {
+      "id": "52",
+      "date": "06/24/2026 19:00",
+      "group": "A",
+      "home": "CZE",
+      "away": "MEX",
+      "homeGoals": 0,
+      "awayGoals": 3,
+      "status": "FT"
     }
   ],
   "source": "https://worldcup26.ir/get/games",
   "sourceOk": true,
   "banter": [
-    "Sofia leads the Golden Boot race with 18 goals from 8 games.",
-    "🇵🇹 POR is carrying Mena harder than airport luggage.",
-    "🇨🇭 SUI has quietly entered the “not so average” conversation for Sofia.",
-    "This leaderboard is temporary, but the group chat abuse is forever."
+    "Sofia has moved into “checking the prize money” territory.",
+    "🇵🇹 POR has put Mena's sweepstake campaign on its back.",
+    "Ziad's average team, 🇲🇽 MEX, is doing suspiciously well.",
+    "The organiser accepts no responsibility for football, maths, or hurt feelings."
   ]
 }
