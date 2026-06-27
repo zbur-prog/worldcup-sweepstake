@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-27T05:03:27.107Z",
+  "generatedAt": "2026-06-27T08:05:55.927Z",
   "players": [
     {
       "name": "Johnny",
@@ -312,10 +312,10 @@
     "IRN": {
       "name": "Iran",
       "flag": "🇮🇷",
-      "goalsFor": 2,
-      "goalsAgainst": 2,
-      "played": 2,
-      "points": 2,
+      "goalsFor": 3,
+      "goalsAgainst": 3,
+      "played": 3,
+      "points": 3,
       "group": "G"
     },
     "TUR": {
@@ -375,10 +375,10 @@
     "EGY": {
       "name": "Egypt",
       "flag": "🇪🇬",
-      "goalsFor": 4,
-      "goalsAgainst": 2,
-      "played": 2,
-      "points": 4,
+      "goalsFor": 5,
+      "goalsAgainst": 3,
+      "played": 3,
+      "points": 5,
       "group": "G"
     },
     "CAN": {
@@ -1222,6 +1222,16 @@
       "status": "FT"
     },
     {
+      "id": "63",
+      "date": "06/26/2026 20:00",
+      "group": "G",
+      "home": "EGY",
+      "away": "IRN",
+      "homeGoals": 1,
+      "awayGoals": 1,
+      "status": "FT"
+    },
+    {
       "id": "64",
       "date": "06/26/2026 20:00",
       "group": "G",
@@ -1235,9 +1245,9 @@
   "source": "https://worldcup26.ir/get/games",
   "sourceOk": true,
   "banter": [
-    "Antoinette has moved into “checking the prize money” territory.",
-    "🇵🇹 POR is carrying Mena harder than airport luggage.",
-    "🇲🇽 MEX is making the Average Team prize look very spicy for Ziad.",
-    "VAR has reviewed the sweepstake and confirmed everyone should calm down."
+    "Antoinette is currently pretending this was always part of the plan.",
+    "🇵🇹 POR has put Mena's sweepstake campaign on its back.",
+    "Ziad's average team, 🇲🇽 MEX, is doing suspiciously well.",
+    "The organiser accepts no responsibility for football, maths, or hurt feelings."
   ]
 }
