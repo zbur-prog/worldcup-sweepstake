@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-27T00:19:55.767Z",
+  "generatedAt": "2026-06-27T05:03:27.107Z",
   "players": [
     {
       "name": "Johnny",
@@ -168,10 +168,10 @@
     "ESP": {
       "name": "Spain",
       "flag": "🇪🇸",
-      "goalsFor": 4,
+      "goalsFor": 5,
       "goalsAgainst": 0,
-      "played": 2,
-      "points": 4,
+      "played": 3,
+      "points": 7,
       "group": "H"
     },
     "FRA": {
@@ -186,10 +186,10 @@
     "BEL": {
       "name": "Belgium",
       "flag": "🇧🇪",
-      "goalsFor": 1,
-      "goalsAgainst": 1,
-      "played": 2,
-      "points": 2,
+      "goalsFor": 6,
+      "goalsAgainst": 2,
+      "played": 3,
+      "points": 5,
       "group": "G"
     },
     "BRA": {
@@ -277,8 +277,8 @@
       "name": "Uruguay",
       "flag": "🇺🇾",
       "goalsFor": 3,
-      "goalsAgainst": 3,
-      "played": 2,
+      "goalsAgainst": 4,
+      "played": 3,
       "points": 2,
       "group": "H"
     },
@@ -512,8 +512,8 @@
       "flag": "🇸🇦",
       "goalsFor": 1,
       "goalsAgainst": 5,
-      "played": 2,
-      "points": 1,
+      "played": 3,
+      "points": 2,
       "group": "H"
     },
     "JOR": {
@@ -539,8 +539,8 @@
       "flag": "🇨🇻",
       "goalsFor": 2,
       "goalsAgainst": 2,
-      "played": 2,
-      "points": 2,
+      "played": 3,
+      "points": 3,
       "group": "H"
     },
     "GHA": {
@@ -573,9 +573,9 @@
     "NZL": {
       "name": "New Zealand",
       "flag": "🇳🇿",
-      "goalsFor": 3,
-      "goalsAgainst": 5,
-      "played": 2,
+      "goalsFor": 4,
+      "goalsAgainst": 10,
+      "played": 3,
       "points": 1,
       "group": "G"
     }
@@ -1200,14 +1200,44 @@
       "homeGoals": 1,
       "awayGoals": 4,
       "status": "FT"
+    },
+    {
+      "id": "66",
+      "date": "06/26/2026 18:00",
+      "group": "H",
+      "home": "URU",
+      "away": "ESP",
+      "homeGoals": 0,
+      "awayGoals": 1,
+      "status": "FT"
+    },
+    {
+      "id": "65",
+      "date": "06/26/2026 19:00",
+      "group": "H",
+      "home": "CPV",
+      "away": "KSA",
+      "homeGoals": 0,
+      "awayGoals": 0,
+      "status": "FT"
+    },
+    {
+      "id": "64",
+      "date": "06/26/2026 20:00",
+      "group": "G",
+      "home": "NZL",
+      "away": "BEL",
+      "homeGoals": 1,
+      "awayGoals": 5,
+      "status": "FT"
     }
   ],
   "source": "https://worldcup26.ir/get/games",
   "sourceOk": true,
   "banter": [
     "Antoinette has moved into “checking the prize money” territory.",
-    "🇵🇹 POR is responsible for 86% of Mena's goals. That is not teamwork, that is outsourcing.",
-    "Ziad's average team, 🇲🇽 MEX, is doing suspiciously well.",
-    "All complaints about the draw remain formally ignored."
+    "🇵🇹 POR is carrying Mena harder than airport luggage.",
+    "🇲🇽 MEX is making the Average Team prize look very spicy for Ziad.",
+    "VAR has reviewed the sweepstake and confirmed everyone should calm down."
   ]
 }
