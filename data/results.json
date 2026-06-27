@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-27T22:15:39.116Z",
+  "generatedAt": "2026-06-27T23:17:59.106Z",
   "players": [
     {
       "name": "Johnny",
@@ -159,10 +159,10 @@
     "ENG": {
       "name": "England",
       "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-      "goalsFor": 4,
+      "goalsFor": 6,
       "goalsAgainst": 2,
-      "played": 2,
-      "points": 4,
+      "played": 3,
+      "points": 7,
       "group": "L"
     },
     "ESP": {
@@ -213,10 +213,10 @@
     "CRO": {
       "name": "Croatia",
       "flag": "🇭🇷",
-      "goalsFor": 3,
-      "goalsAgainst": 4,
-      "played": 2,
-      "points": 3,
+      "goalsFor": 5,
+      "goalsAgainst": 5,
+      "played": 3,
+      "points": 6,
       "group": "L"
     },
     "COL": {
@@ -412,8 +412,8 @@
       "name": "Panama",
       "flag": "🇵🇦",
       "goalsFor": 0,
-      "goalsAgainst": 2,
-      "played": 2,
+      "goalsAgainst": 4,
+      "played": 3,
       "points": 0,
       "group": "L"
     },
@@ -546,9 +546,9 @@
     "GHA": {
       "name": "Ghana",
       "flag": "🇬🇭",
-      "goalsFor": 1,
-      "goalsAgainst": 0,
-      "played": 2,
+      "goalsFor": 2,
+      "goalsAgainst": 2,
+      "played": 3,
       "points": 4,
       "group": "L"
     },
@@ -1240,14 +1240,34 @@
       "homeGoals": 1,
       "awayGoals": 5,
       "status": "FT"
+    },
+    {
+      "id": "67",
+      "date": "06/27/2026 17:00",
+      "group": "L",
+      "home": "PAN",
+      "away": "ENG",
+      "homeGoals": 0,
+      "awayGoals": 2,
+      "status": "FT"
+    },
+    {
+      "id": "68",
+      "date": "06/27/2026 17:00",
+      "group": "L",
+      "home": "CRO",
+      "away": "GHA",
+      "homeGoals": 2,
+      "awayGoals": 1,
+      "status": "FT"
     }
   ],
   "source": "https://worldcup26.ir/get/games",
   "sourceOk": true,
   "banter": [
-    "Antoinette has started acting like a tactical genius. We are monitoring the situation.",
+    "Antoinette is currently pretending this was always part of the plan.",
     "🇵🇹 POR is responsible for 86% of Mena's goals. That is not teamwork, that is outsourcing.",
-    "Ziad may need to apologise to 🇲🇽 MEX for calling them average.",
-    "If your team has not played yet, congratulations: hope remains undefeated."
+    "🇲🇽 MEX is making the Average Team prize look very spicy for Ziad.",
+    "All complaints about the draw remain formally ignored."
   ]
 }
