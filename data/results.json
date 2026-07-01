@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-01T21:49:21.323Z",
+  "generatedAt": "2026-07-01T23:42:11.563Z",
   "players": [
     {
       "name": "Johnny",
@@ -186,10 +186,10 @@
     "BEL": {
       "name": "Belgium",
       "flag": "🇧🇪",
-      "goalsFor": 6,
-      "goalsAgainst": 2,
-      "played": 3,
-      "points": 5,
+      "goalsFor": 9,
+      "goalsAgainst": 4,
+      "played": 4,
+      "points": 8,
       "group": "G"
     },
     "BRA": {
@@ -267,9 +267,9 @@
     "SEN": {
       "name": "Senegal",
       "flag": "🇸🇳",
-      "goalsFor": 8,
-      "goalsAgainst": 6,
-      "played": 3,
+      "goalsFor": 10,
+      "goalsAgainst": 9,
+      "played": 4,
       "points": 3,
       "group": "I"
     },
@@ -1380,14 +1380,24 @@
       "homeGoals": 2,
       "awayGoals": 1,
       "status": "FT"
+    },
+    {
+      "id": "82",
+      "date": "07/01/2026 13:00",
+      "group": "R32",
+      "home": "BEL",
+      "away": "SEN",
+      "homeGoals": 3,
+      "awayGoals": 2,
+      "status": "FT"
     }
   ],
   "source": "https://worldcup26.ir/get/games",
   "sourceOk": true,
   "banter": [
-    "Yasmeena has started acting like a tactical genius. We are monitoring the situation.",
-    "🇵🇹 POR is responsible for 86% of Mena's goals. That is not teamwork, that is outsourcing.",
-    "Ziad's average team, 🇲🇽 MEX, is doing suspiciously well.",
-    "All complaints about the draw remain formally ignored."
+    "Yasmeena leads the Golden Boot race with 24 goals from 10 games.",
+    "🇵🇹 POR is carrying Mena harder than airport luggage.",
+    "Ziad may need to apologise to 🇲🇽 MEX for calling them average.",
+    "This leaderboard is temporary, but the group chat abuse is forever."
   ]
 }
