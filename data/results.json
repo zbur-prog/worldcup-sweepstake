@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-01T23:42:11.563Z",
+  "generatedAt": "2026-07-02T04:20:24.271Z",
   "players": [
     {
       "name": "Johnny",
@@ -285,10 +285,10 @@
     "USA": {
       "name": "United States",
       "flag": "🇺🇸",
-      "goalsFor": 8,
+      "goalsFor": 10,
       "goalsAgainst": 4,
-      "played": 3,
-      "points": 6,
+      "played": 4,
+      "points": 9,
       "group": "D"
     },
     "JPN": {
@@ -529,8 +529,8 @@
       "name": "Bosnia & Herzegovina",
       "flag": "🇧🇦",
       "goalsFor": 5,
-      "goalsAgainst": 6,
-      "played": 3,
+      "goalsAgainst": 8,
+      "played": 4,
       "points": 4,
       "group": "B"
     },
@@ -1390,14 +1390,24 @@
       "homeGoals": 3,
       "awayGoals": 2,
       "status": "FT"
+    },
+    {
+      "id": "81",
+      "date": "07/01/2026 17:00",
+      "group": "R32",
+      "home": "USA",
+      "away": "BIH",
+      "homeGoals": 2,
+      "awayGoals": 0,
+      "status": "FT"
     }
   ],
   "source": "https://worldcup26.ir/get/games",
   "sourceOk": true,
   "banter": [
-    "Yasmeena leads the Golden Boot race with 24 goals from 10 games.",
-    "🇵🇹 POR is carrying Mena harder than airport luggage.",
+    "Yasmeena has moved into “checking the prize money” territory.",
+    "🇵🇹 POR is responsible for 86% of Mena's goals. That is not teamwork, that is outsourcing.",
     "Ziad may need to apologise to 🇲🇽 MEX for calling them average.",
-    "This leaderboard is temporary, but the group chat abuse is forever."
+    "All complaints about the draw remain formally ignored."
   ]
 }
