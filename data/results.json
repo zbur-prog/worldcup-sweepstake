@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-03T20:32:46.212Z",
+  "generatedAt": "2026-07-03T22:15:26.813Z",
   "players": [
     {
       "name": "Johnny",
@@ -357,10 +357,10 @@
     "AUS": {
       "name": "Australia",
       "flag": "🇦🇺",
-      "goalsFor": 2,
-      "goalsAgainst": 2,
-      "played": 3,
-      "points": 4,
+      "goalsFor": 3,
+      "goalsAgainst": 3,
+      "played": 4,
+      "points": 5,
       "group": "D"
     },
     "DZA": {
@@ -375,10 +375,10 @@
     "EGY": {
       "name": "Egypt",
       "flag": "🇪🇬",
-      "goalsFor": 5,
-      "goalsAgainst": 3,
-      "played": 3,
-      "points": 5,
+      "goalsFor": 6,
+      "goalsAgainst": 4,
+      "played": 4,
+      "points": 6,
       "group": "G"
     },
     "CAN": {
@@ -1430,14 +1430,24 @@
       "homeGoals": 2,
       "awayGoals": 0,
       "status": "FT"
+    },
+    {
+      "id": "88",
+      "date": "07/03/2026 13:00",
+      "group": "R32",
+      "home": "AUS",
+      "away": "EGY",
+      "homeGoals": 1,
+      "awayGoals": 1,
+      "status": "FT"
     }
   ],
   "source": "https://worldcup26.ir/get/games",
   "sourceOk": true,
   "banter": [
-    "Yasmeena leads the Golden Boot race with 24 goals from 12 games.",
-    "🇵🇹 POR is responsible for 89% of Mena's goals. That is not teamwork, that is outsourcing.",
-    "🇲🇽 MEX is making the Average Team prize look very spicy for Ziad.",
-    "All complaints about the draw remain formally ignored."
+    "Yasmeena is top of the table and absolutely not being humble about it.",
+    "🇵🇹 POR has put Mena's sweepstake campaign on its back.",
+    "🇲🇽 MEX has quietly entered the “not so average” conversation for Ziad.",
+    "This leaderboard is temporary, but the group chat abuse is forever."
   ]
 }
