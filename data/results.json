@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-03T04:55:59.197Z",
+  "generatedAt": "2026-07-03T08:26:49.071Z",
   "players": [
     {
       "name": "Johnny",
@@ -303,10 +303,10 @@
     "SUI": {
       "name": "Switzerland",
       "flag": "🇨🇭",
-      "goalsFor": 7,
+      "goalsFor": 9,
       "goalsAgainst": 3,
-      "played": 3,
-      "points": 7,
+      "played": 4,
+      "points": 10,
       "group": "B"
     },
     "IRN": {
@@ -367,8 +367,8 @@
       "name": "Algeria",
       "flag": "🇩🇿",
       "goalsFor": 5,
-      "goalsAgainst": 7,
-      "played": 3,
+      "goalsAgainst": 9,
+      "played": 4,
       "points": 4,
       "group": "J"
     },
@@ -1420,14 +1420,24 @@
       "homeGoals": 2,
       "awayGoals": 1,
       "status": "FT"
+    },
+    {
+      "id": "85",
+      "date": "07/02/2026 20:00",
+      "group": "R32",
+      "home": "SUI",
+      "away": "DZA",
+      "homeGoals": 2,
+      "awayGoals": 0,
+      "status": "FT"
     }
   ],
   "source": "https://worldcup26.ir/get/games",
   "sourceOk": true,
   "banter": [
     "Yasmeena has started acting like a tactical genius. We are monitoring the situation.",
-    "Mena owes 🇵🇹 POR a thank-you card at this point.",
+    "🇵🇹 POR is carrying Mena harder than airport luggage.",
     "🇲🇽 MEX has quietly entered the “not so average” conversation for Ziad.",
-    "If your team has not played yet, congratulations: hope remains undefeated."
+    "VAR has reviewed the sweepstake and confirmed everyone should calm down."
   ]
 }
