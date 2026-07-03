@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-03T08:26:49.071Z",
+  "generatedAt": "2026-07-03T11:41:27.830Z",
   "players": [
     {
       "name": "Johnny",
@@ -1432,11 +1432,11 @@
       "status": "FT"
     }
   ],
-  "source": "https://worldcup26.ir/get/games",
-  "sourceOk": true,
+  "source": "last result and fallback-in-repo",
+  "sourceOk": false,
   "banter": [
-    "Yasmeena has started acting like a tactical genius. We are monitoring the situation.",
-    "🇵🇹 POR is carrying Mena harder than airport luggage.",
+    "Yasmeena leads the Golden Boot race with 24 goals from 12 games.",
+    "Mena owes 🇵🇹 POR a thank-you card at this point.",
     "🇲🇽 MEX has quietly entered the “not so average” conversation for Ziad.",
     "VAR has reviewed the sweepstake and confirmed everyone should calm down."
   ]
