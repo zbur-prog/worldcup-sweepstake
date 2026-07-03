@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-03T00:18:27.399Z",
+  "generatedAt": "2026-07-03T04:55:59.197Z",
   "players": [
     {
       "name": "Johnny",
@@ -213,9 +213,9 @@
     "CRO": {
       "name": "Croatia",
       "flag": "🇭🇷",
-      "goalsFor": 5,
-      "goalsAgainst": 5,
-      "played": 3,
+      "goalsFor": 6,
+      "goalsAgainst": 7,
+      "played": 4,
       "points": 6,
       "group": "L"
     },
@@ -249,10 +249,10 @@
     "POR": {
       "name": "Portugal",
       "flag": "🇵🇹",
-      "goalsFor": 6,
-      "goalsAgainst": 1,
-      "played": 3,
-      "points": 5,
+      "goalsFor": 8,
+      "goalsAgainst": 2,
+      "played": 4,
+      "points": 8,
       "group": "K"
     },
     "MEX": {
@@ -1410,14 +1410,24 @@
       "homeGoals": 3,
       "awayGoals": 0,
       "status": "FT"
+    },
+    {
+      "id": "83",
+      "date": "07/02/2026 19:00",
+      "group": "R32",
+      "home": "POR",
+      "away": "CRO",
+      "homeGoals": 2,
+      "awayGoals": 1,
+      "status": "FT"
     }
   ],
   "source": "https://worldcup26.ir/get/games",
   "sourceOk": true,
   "banter": [
-    "Yasmeena is currently pretending this was always part of the plan.",
+    "Yasmeena has started acting like a tactical genius. We are monitoring the situation.",
     "Mena owes 🇵🇹 POR a thank-you card at this point.",
-    "🇲🇽 MEX is making the Average Team prize look very spicy for Ziad.",
-    "VAR has reviewed the sweepstake and confirmed everyone should calm down."
+    "🇲🇽 MEX has quietly entered the “not so average” conversation for Ziad.",
+    "If your team has not played yet, congratulations: hope remains undefeated."
   ]
 }
