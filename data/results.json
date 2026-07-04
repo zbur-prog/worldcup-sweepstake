@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-03T23:19:24.580Z",
+  "generatedAt": "2026-07-04T04:00:22.093Z",
   "players": [
     {
       "name": "Johnny",
@@ -150,10 +150,10 @@
     "ARG": {
       "name": "Argentina",
       "flag": "🇦🇷",
-      "goalsFor": 8,
-      "goalsAgainst": 1,
-      "played": 3,
-      "points": 9,
+      "goalsFor": 11,
+      "goalsAgainst": 3,
+      "played": 4,
+      "points": 12,
       "group": "J"
     },
     "ENG": {
@@ -222,10 +222,10 @@
     "COL": {
       "name": "Colombia",
       "flag": "🇨🇴",
-      "goalsFor": 4,
+      "goalsFor": 5,
       "goalsAgainst": 1,
-      "played": 3,
-      "points": 7,
+      "played": 4,
+      "points": 10,
       "group": "K"
     },
     "MAR": {
@@ -537,9 +537,9 @@
     "CPV": {
       "name": "Cape Verde",
       "flag": "🇨🇻",
-      "goalsFor": 2,
-      "goalsAgainst": 2,
-      "played": 3,
+      "goalsFor": 4,
+      "goalsAgainst": 5,
+      "played": 4,
       "points": 3,
       "group": "H"
     },
@@ -547,8 +547,8 @@
       "name": "Ghana",
       "flag": "🇬🇭",
       "goalsFor": 2,
-      "goalsAgainst": 2,
-      "played": 3,
+      "goalsAgainst": 3,
+      "played": 4,
       "points": 4,
       "group": "L"
     },
@@ -1440,14 +1440,34 @@
       "homeGoals": 1,
       "awayGoals": 1,
       "status": "FT"
+    },
+    {
+      "id": "86",
+      "date": "07/03/2026 18:00",
+      "group": "R32",
+      "home": "ARG",
+      "away": "CPV",
+      "homeGoals": 3,
+      "awayGoals": 2,
+      "status": "FT"
+    },
+    {
+      "id": "87",
+      "date": "07/03/2026 20:30",
+      "group": "R32",
+      "home": "COL",
+      "away": "GHA",
+      "homeGoals": 1,
+      "awayGoals": 0,
+      "status": "FT"
     }
   ],
   "source": "https://worldcup26.ir/get/games",
   "sourceOk": true,
   "banter": [
-    "Yasmeena is top of the table and absolutely not being humble about it.",
+    "Nadine has started acting like a tactical genius. We are monitoring the situation.",
     "🇵🇹 POR is carrying Mena harder than airport luggage.",
-    "Ziad's average team, 🇲🇽 MEX, is doing suspiciously well.",
+    "🇲🇽 MEX has quietly entered the “not so average” conversation for Ziad.",
     "VAR has reviewed the sweepstake and confirmed everyone should calm down."
   ]
 }
