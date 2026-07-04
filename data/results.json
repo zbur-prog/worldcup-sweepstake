@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-04T17:18:20.412Z",
+  "generatedAt": "2026-07-04T19:35:47.936Z",
   "players": [
     {
       "name": "Johnny",
@@ -231,10 +231,10 @@
     "MAR": {
       "name": "Morocco",
       "flag": "🇲🇦",
-      "goalsFor": 7,
+      "goalsFor": 10,
       "goalsAgainst": 4,
-      "played": 4,
-      "points": 8,
+      "played": 5,
+      "points": 11,
       "group": "C"
     },
     "NED": {
@@ -385,8 +385,8 @@
       "name": "Canada",
       "flag": "🇨🇦",
       "goalsFor": 9,
-      "goalsAgainst": 3,
-      "played": 4,
+      "goalsAgainst": 6,
+      "played": 5,
       "points": 7,
       "group": "B"
     },
@@ -1460,14 +1460,24 @@
       "homeGoals": 1,
       "awayGoals": 0,
       "status": "FT"
+    },
+    {
+      "id": "90",
+      "date": "07/04/2026 12:00",
+      "group": "R16",
+      "home": "CAN",
+      "away": "MAR",
+      "homeGoals": 0,
+      "awayGoals": 3,
+      "status": "FT"
     }
   ],
   "source": "https://worldcup26.ir/get/games",
   "sourceOk": true,
   "banter": [
-    "Nadine has started acting like a tactical genius. We are monitoring the situation.",
-    "🇵🇹 POR is carrying Mena harder than airport luggage.",
-    "🇲🇽 MEX is making the Average Team prize look very spicy for Ziad.",
-    "This leaderboard is temporary, but the group chat abuse is forever."
+    "Nadine has moved into “checking the prize money” territory.",
+    "🇵🇹 POR is doing the heavy lifting while Mena's other teams enjoy the view.",
+    "🇲🇽 MEX has quietly entered the “not so average” conversation for Ziad.",
+    "The organiser accepts no responsibility for football, maths, or hurt feelings."
   ]
 }
