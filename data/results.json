@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-05T21:18:53.829Z",
+  "generatedAt": "2026-07-05T23:17:17.008Z",
   "players": [
     {
       "name": "Johnny",
@@ -195,9 +195,9 @@
     "BRA": {
       "name": "Brazil",
       "flag": "🇧🇷",
-      "goalsFor": 9,
-      "goalsAgainst": 2,
-      "played": 4,
+      "goalsFor": 10,
+      "goalsAgainst": 4,
+      "played": 5,
       "points": 10,
       "group": "C"
     },
@@ -393,10 +393,10 @@
     "NOR": {
       "name": "Norway",
       "flag": "🇳🇴",
-      "goalsFor": 10,
-      "goalsAgainst": 8,
-      "played": 4,
-      "points": 9,
+      "goalsFor": 12,
+      "goalsAgainst": 9,
+      "played": 5,
+      "points": 12,
       "group": "I"
     },
     "CIV": {
@@ -1480,14 +1480,24 @@
       "homeGoals": 0,
       "awayGoals": 1,
       "status": "FT"
+    },
+    {
+      "id": "91",
+      "date": "07/05/2026 16:00",
+      "group": "R16",
+      "home": "BRA",
+      "away": "NOR",
+      "homeGoals": 1,
+      "awayGoals": 2,
+      "status": "FT"
     }
   ],
   "source": "https://worldcup26.ir/get/games",
   "sourceOk": true,
   "banter": [
-    "Nadine leads the Golden Boot race with 25 goals from 12 games.",
-    "🇵🇹 POR is doing the heavy lifting while Mena's other teams enjoy the view.",
-    "🇲🇽 MEX is making the Average Team prize look very spicy for Ziad.",
-    "The organiser accepts no responsibility for football, maths, or hurt feelings."
+    "Nadine has started acting like a tactical genius. We are monitoring the situation.",
+    "🇵🇹 POR is carrying Mena harder than airport luggage.",
+    "🇳🇴 NOR is making the Average Team prize look very spicy for Nadine.",
+    "VAR has reviewed the sweepstake and confirmed everyone should calm down."
   ]
 }
