@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-07T17:25:43.101Z",
+  "generatedAt": "2026-07-07T20:13:16.898Z",
   "players": [
     {
       "name": "Johnny",
@@ -150,10 +150,10 @@
     "ARG": {
       "name": "Argentina",
       "flag": "🇦🇷",
-      "goalsFor": 11,
-      "goalsAgainst": 3,
-      "played": 4,
-      "points": 12,
+      "goalsFor": 14,
+      "goalsAgainst": 5,
+      "played": 5,
+      "points": 15,
       "group": "J"
     },
     "ENG": {
@@ -375,9 +375,9 @@
     "EGY": {
       "name": "Egypt",
       "flag": "🇪🇬",
-      "goalsFor": 6,
-      "goalsAgainst": 4,
-      "played": 4,
+      "goalsFor": 8,
+      "goalsAgainst": 7,
+      "played": 5,
       "points": 6,
       "group": "G"
     },
@@ -1714,12 +1714,24 @@
       "awayGoals": 4,
       "winner": "BEL",
       "status": "FT"
+    },
+    {
+      "id": "95",
+      "date": "07/07/2026 12:00",
+      "group": "R16",
+      "stage": "R16",
+      "home": "ARG",
+      "away": "EGY",
+      "homeGoals": 3,
+      "awayGoals": 2,
+      "winner": "ARG",
+      "status": "FT"
     }
   ],
   "source": "https://worldcup26.ir/get/games",
   "sourceOk": true,
   "banter": [
-    "Nadine has started acting like a tactical genius. We are monitoring the situation.",
+    "Nadine leads the Golden Boot race with 30 goals from 14 games.",
     "🇵🇹 POR is responsible for 89% of Mena's goals. That is not teamwork, that is outsourcing.",
     "Nadine may need to apologise to 🇳🇴 NOR for calling them average.",
     "All complaints about the draw remain formally ignored."
