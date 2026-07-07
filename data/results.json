@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-07T21:40:23.286Z",
+  "generatedAt": "2026-07-07T23:13:49.898Z",
   "players": [
     {
       "name": "Johnny",
@@ -224,8 +224,8 @@
       "flag": "🇨🇴",
       "goalsFor": 5,
       "goalsAgainst": 1,
-      "played": 4,
-      "points": 10,
+      "played": 5,
+      "points": 11,
       "group": "K"
     },
     "MAR": {
@@ -305,8 +305,8 @@
       "flag": "🇨🇭",
       "goalsFor": 9,
       "goalsAgainst": 3,
-      "played": 4,
-      "points": 10,
+      "played": 5,
+      "points": 11,
       "group": "B"
     },
     "IRN": {
@@ -1726,15 +1726,29 @@
       "awayGoals": 2,
       "winner": "ARG",
       "status": "FT"
+    },
+    {
+      "id": "96",
+      "date": "07/07/2026 13:00",
+      "group": "R16",
+      "stage": "R16",
+      "home": "SUI",
+      "away": "COL",
+      "homeGoals": 0,
+      "awayGoals": 0,
+      "homePenalties": 4,
+      "awayPenalties": 3,
+      "winner": "SUI",
+      "status": "FT"
     }
   ],
   "source": "https://worldcup26.ir/get/games",
   "sourceOk": true,
   "banter": [
-    "Nadine has moved into “checking the prize money” territory.",
-    "Mena owes 🇵🇹 POR a thank-you card at this point.",
-    "🇳🇴 NOR is making the Average Team prize look very spicy for Nadine.",
-    "If your team has not played yet, congratulations: hope remains undefeated."
+    "Nadine has started acting like a tactical genius. We are monitoring the situation.",
+    "🇵🇹 POR has put Mena's sweepstake campaign on its back.",
+    "🇳🇴 NOR has quietly entered the “not so average” conversation for Nadine.",
+    "This leaderboard is temporary, but the group chat abuse is forever."
   ],
   "sourceError": null
 }
