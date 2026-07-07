@@ -11,18 +11,55 @@
     <div class="container">
       <p class="eyebrow">Family World Cup Sweepstake</p>
       <h1>🏆 Sweepstake HQ</h1>
-      <p class="sub">Golden Boot, best average team, scores and standings.</p>
+      <p class="sub">Prize contenders, Golden Boot, banter, scores and standings.</p>
       <p class="updated">Last updated: <strong id="lastUpdated">Loading…</strong></p>
     </div>
   </header>
 
   <main class="container">
+    <section class="grid prize-grid" id="prizeCards"></section>
+
+    <section class="card">
+      <h2>📣 Banter Desk</h2>
+      <div id="banter" class="banter"></div>
+    </section>
+
     <section class="grid cards" id="topCards"></section>
+
+    <section class="card">
+      <div class="section-head">
+        <div>
+          <h2>🏆 Winner Prize — $80</h2>
+          <p>Current contenders based on teams still alive.</p>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>#</th><th>Player</th><th>Teams</th><th>Alive</th><th>Best</th></tr></thead>
+          <tbody id="winnerBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="section-head">
+        <div>
+          <h2>🥈 Best Average Team — $25</h2>
+          <p>Tier 2 teams ranked by result, then Pts, GD, GF.</p>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>#</th><th>Player</th><th>Team</th><th>Result</th><th>Pts</th><th>GD</th><th>GF</th></tr></thead>
+          <tbody id="averageBody"></tbody>
+        </table>
+      </div>
+    </section>
 
     <section class="card golden-card">
       <div class="section-head">
         <div>
-          <h2>⚽ Golden Boot</h2>
+          <h2>⚽ Golden Boot — $15</h2>
           <p>Combined goals scored by each player’s 3 teams.</p>
         </div>
       </div>
@@ -51,15 +88,6 @@
 
     <section class="grid two">
       <section class="card">
-        <h2>🥈 Best Average Team</h2>
-        <div class="table-wrap">
-          <table>
-            <thead><tr><th>#</th><th>Team</th><th>Owner</th><th>Pts</th><th>GD</th><th>GF</th></tr></thead>
-            <tbody id="averageBody"></tbody>
-          </table>
-        </div>
-      </section>
-      <section class="card">
         <h2>🎲 Full Draw</h2>
         <div class="table-wrap">
           <table>
@@ -68,16 +96,10 @@
           </table>
         </div>
       </section>
-    </section>
-
-    <section class="card">
-      <h2>📣 Banter Desk</h2>
-      <div id="banter" class="banter"></div>
-    </section>
-
-    <section class="card">
-      <h2>📋 All Scores</h2>
-      <div class="scores" id="scores"></div>
+      <section class="card">
+        <h2>📋 All Scores</h2>
+        <div class="scores" id="scores"></div>
+      </section>
     </section>
 
     <section class="card">

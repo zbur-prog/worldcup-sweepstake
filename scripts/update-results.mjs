@@ -198,6 +198,7 @@ async function main() {
   const current = JSON.parse(await fs.readFile(OUT, 'utf8'));
   let source = API_URL;
   let sourceOk = false;
+  let sourceError = null;
   let apiMatches = [];
 
   try {
@@ -205,15 +206,25 @@ async function main() {
     sourceOk = apiMatches.length > 0;
     console.log(`Parsed ${apiMatches.length} finished matches from API.`);
   } catch (err) {
+    sourceError = err.message;
+    source = current.source || 'last-good-results';
     console.error(`Could not fetch/parse ${API_URL}: ${err.message}`);
   }
 
-  const matches = sourceOk
-    ? mergeMatches(apiMatches)
-    : (current.matches || fallbackMatches);
-  
-  if (!sourceOk) source = 'last result and fallback-in-repo';
+  if (!sourceOk) {
+    const output = {
+      ...current,
+      generatedAt: new Date().toISOString(),
+      sourceOk: false,
+      sourceError,
+      source
+    };
+    await fs.writeFile(OUT, JSON.stringify(output, null, 2) + '\n');
+    console.log(`API unavailable. Preserved ${Array.isArray(output.matches) ? output.matches.length : 0} existing matches and existing teams.`);
+    return;
+  }
 
+  const matches = mergeMatches(apiMatches);
   const updatedTeams = buildTeams(current.teams || {}, matches);
   const generatedAt = new Date().toISOString();
 
@@ -221,7 +232,8 @@ async function main() {
     ...current,
     generatedAt,
     source,
-    sourceOk,
+    sourceOk: true,
+    sourceError: null,
     teams: updatedTeams,
     matches,
     banter: generateBanter(current.players || [], updatedTeams, new Date(generatedAt))

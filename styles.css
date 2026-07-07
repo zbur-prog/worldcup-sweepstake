@@ -7,8 +7,8 @@
   --muted: #a8b5ad;
   --gold: #f7c948;
   --green: #19c37d;
+  --red: #ff6b6b;
 
-  /* ONE PLACE TO TUNE GOLDEN BOOT COLUMN WIDTHS */
   --gb-rank: 34px;
   --gb-player: 100px;
   --gb-teams: 82px;
@@ -32,6 +32,7 @@ p { margin: 0; }
 .updated { margin-top: 8px; }
 
 .grid { display: grid; gap: 14px; }
+.prize-grid { grid-template-columns: repeat(3, 1fr); margin: 16px 0; }
 .cards { grid-template-columns: repeat(4, 1fr); margin: 16px 0; }
 .two { grid-template-columns: 1fr 1fr; margin-top: 14px; }
 .card {
@@ -40,12 +41,21 @@ p { margin: 0; }
   border-radius: 20px;
   padding: 16px;
   box-shadow: 0 12px 36px rgba(0,0,0,.22);
+  margin-bottom: 14px;
 }
 .stat { min-height: 112px; }
 .stat .label { color: var(--muted); font-size: 13px; }
 .stat .value { font-size: 26px; font-weight: 900; margin-top: 8px; }
 .stat .detail { color: var(--muted); font-size: 13px; margin-top: 6px; }
 .section-head { display: flex; justify-content: space-between; align-items: end; gap: 12px; margin-bottom: 10px; }
+
+.prize-card { margin-bottom: 0; }
+.prize-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 10px; }
+.prize-head h2 { margin: 0; font-size: 18px; }
+.prize-head span { color: var(--gold); font-size: 22px; font-weight: 950; white-space: nowrap; }
+.prize-main { font-size: 20px; font-weight: 900; margin-bottom: 10px; }
+.mini-list { display: grid; gap: 6px; color: var(--muted); font-size: 13px; }
+.mini-list strong { color: var(--text); }
 
 .table-wrap { width: 100%; overflow-x: auto; }
 .table-wrap.no-scroll { overflow-x: visible; }
@@ -56,13 +66,21 @@ td { font-size: 14px; }
 .num, .col-goals, .col-games { text-align: center; font-weight: 800; }
 .team-flags { white-space: nowrap; letter-spacing: 1px; font-size: 18px; }
 .team-pill { white-space: nowrap; display: inline-block; }
-
-/* GOLDEN BOOT TABLE - CLEAN AND ISOLATED */
-.golden-card { max-width: 760px; margin: 0 auto; }
-.goldenboot-table {
-  width: 100%;
-  table-layout: fixed;
+.alive-row td { color: var(--text); }
+.out-row td { color: rgba(243,247,241,.55); }
+.live-badge, .out-badge {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 900;
+  white-space: nowrap;
 }
+.live-badge { color: #07110d; background: var(--green); }
+.out-badge { color: var(--muted); background: rgba(255,255,255,.07); text-decoration: line-through; }
+
+.golden-card { max-width: 760px; margin-left: auto; margin-right: auto; }
+.goldenboot-table { width: 100%; table-layout: fixed; }
 .goldenboot-table th,
 .goldenboot-table td {
   padding: 8px 4px;
@@ -80,6 +98,7 @@ td { font-size: 14px; }
 .goldenboot-table col.gb-player { width: var(--gb-player); }
 .goldenboot-table col.gb-teams { width: var(--gb-teams); }
 .goldenboot-table col.gb-score { width: var(--gb-score); }
+.goldenboot-table .col-player { font-weight: 900; }
 
 .banter { display: grid; gap: 10px; }
 .banter-item { padding: 12px; border-radius: 14px; background: rgba(255,255,255,.05); color: #edf5ef; }
@@ -91,11 +110,11 @@ td { font-size: 14px; }
 
 @media (max-width: 760px) {
   .container { width: min(430px, calc(100% - 18px)); }
-  .cards { grid-template-columns: 1fr 1fr; }
-  .two { grid-template-columns: 1fr; }
+  .prize-grid, .cards, .two { grid-template-columns: 1fr; }
   .card { padding: 12px; border-radius: 16px; }
   h2 { font-size: 19px; }
   th, td { padding: 8px 5px; font-size: 13px; }
+  .prize-main { font-size: 18px; }
 
   :root {
     --gb-rank: 30px;
@@ -106,33 +125,10 @@ td { font-size: 14px; }
   .golden-card { max-width: 100%; }
   .goldenboot-table th,
   .goldenboot-table td { padding: 7px 3px; font-size: 12px; }
-  .goldenboot-table .team-flags { font-size: 16px; }
-}
-/* USER FINAL TWEAKS - Golden Boot only
-   Change these four values if you want to tune the mobile table widths. */
-@media (max-width: 760px) {
-  :root {
-    --gb-rank: 30px;
-    --gb-player: 92px;
-    --gb-teams: 78px;
-    --gb-score: 32px;
-  }
-
-  .goldenboot-table .col-player {
-    font-size: 15px;
-    font-weight: 900;
-  }
-
-  .goldenboot-table .team-flags {
-    font-size: 16px;
-    letter-spacing: 0;
-  }
+  .goldenboot-table .col-player { font-size: 15px; font-weight: 900; }
+  .goldenboot-table .team-flags { font-size: 16px; letter-spacing: 0; }
 }
 
 @media (min-width: 761px) {
-  .goldenboot-table .col-player {
-    font-size: 16px;
-    font-weight: 900;
-  }
+  .goldenboot-table .col-player { font-size: 16px; font-weight: 900; }
 }
-/* END USER FINAL TWEAKS */
