@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-07T00:19:34.854Z",
+  "generatedAt": "2026-07-07T05:05:44.165Z",
   "players": [
     {
       "name": "Johnny",
@@ -186,10 +186,10 @@
     "BEL": {
       "name": "Belgium",
       "flag": "🇧🇪",
-      "goalsFor": 9,
-      "goalsAgainst": 4,
-      "played": 4,
-      "points": 8,
+      "goalsFor": 13,
+      "goalsAgainst": 5,
+      "played": 5,
+      "points": 11,
       "group": "G"
     },
     "BRA": {
@@ -285,9 +285,9 @@
     "USA": {
       "name": "United States",
       "flag": "🇺🇸",
-      "goalsFor": 10,
-      "goalsAgainst": 4,
-      "played": 4,
+      "goalsFor": 11,
+      "goalsAgainst": 8,
+      "played": 5,
       "points": 9,
       "group": "D"
     },
@@ -1510,14 +1510,25 @@
       "homeGoals": 0,
       "awayGoals": 1,
       "status": "FT"
+    },
+    {
+      "id": "94",
+      "date": "07/06/2026 17:00",
+      "group": "R16",
+      "home": "USA",
+      "away": "BEL",
+      "homeGoals": 1,
+      "awayGoals": 4,
+      "status": "FT"
     }
   ],
   "source": "https://worldcup26.ir/get/games",
   "sourceOk": true,
   "banter": [
-    "Nadine leads the Golden Boot race with 27 goals from 13 games.",
+    "Nadine is currently pretending this was always part of the plan.",
     "Mena owes 🇵🇹 POR a thank-you card at this point.",
-    "Nadine's average team, 🇳🇴 NOR, is doing suspiciously well.",
+    "🇳🇴 NOR has quietly entered the “not so average” conversation for Nadine.",
     "If your team has not played yet, congratulations: hope remains undefeated."
-  ]
+  ],
+  "sourceError": null
 }
