@@ -40,7 +40,7 @@ function normalizeStage(value) {
   if (['R16','ROUND16','ROUNDOF16'].includes(s)) return 'R16';
   if (['QF','QUARTERFINAL','QUARTERFINALS'].includes(s)) return 'QF';
   if (['SF','SEMIFINAL','SEMIFINALS'].includes(s)) return 'SF';
-  if (['F','FINAL'].includes(s)) return 'Final';
+  if (['FINAL'].includes(s)) return 'Final';
   return null;
 }
 
@@ -62,10 +62,19 @@ function playerTotals(player, teams) {
 }
 
 function getWinner(match) {
+  const explicit = match.winner || match.winnerTeam || match.winnerCode || match.qualified || match.advances;
+  if (explicit) return explicit;
+
+  const hp = Number(match.homePenalties ?? match.homePenaltyGoals ?? match.homePens);
+  const ap = Number(match.awayPenalties ?? match.awayPenaltyGoals ?? match.awayPens);
+  if (Number.isFinite(hp) && Number.isFinite(ap) && hp !== ap) {
+    return hp > ap ? match.home : match.away;
+  }
+
   if (!Number.isFinite(Number(match.homeGoals)) || !Number.isFinite(Number(match.awayGoals))) return null;
   if (match.homeGoals > match.awayGoals) return match.home;
   if (match.awayGoals > match.homeGoals) return match.away;
-  return match.winner || match.winnerTeam || null;
+  return null;
 }
 
 function getGroupRanking(teams) {
@@ -171,9 +180,9 @@ function renderPrizeCards(players, teams, rows, teamStatus) {
 
   byId('prizeCards').innerHTML = `
     <section class="prize-card card">
-      <div class="prize-head"><h2>🏆 Winner</h2><span>${PRIZES.winner}</span></div>
+      <div class="prize-head"><h2>🥇 Prize 1 – World Cup Winner</h2><span>${PRIZES.winner}</span></div>
       ${winnerTeam ? `
-        <div class="prize-main">${teamCell(winnerTeam, teams)} wins</div>
+        <div class="prize-main">${teamCell(winnerTeam, teams)} confirmed</div>
         <div class="mini-list">${winnerPlayers.map(p => `<div>${p.name}</div>`).join('')}</div>
       ` : `
         <div class="prize-main">${contenders.length} contenders alive</div>
@@ -182,13 +191,13 @@ function renderPrizeCards(players, teams, rows, teamStatus) {
     </section>
 
     <section class="prize-card card">
-      <div class="prize-head"><h2>🥈 Best Average Team</h2><span>${PRIZES.average}</span></div>
+      <div class="prize-head"><h2>🥈 Prize 2 – Best Average Team</h2><span>${PRIZES.average}</span></div>
       <div class="prize-main">${averageRows[0] ? `${averageRows[0].player} • ${teamCell(averageRows[0].code, teams)}` : 'Waiting...'}</div>
       <div class="mini-list">${averageRows.slice(0, 3).map((r,i) => `<div>${medals[i] || i+1} ${r.player} — ${teamCell(r.code, teams)} • ${r.result}</div>`).join('')}</div>
     </section>
 
     <section class="prize-card card">
-      <div class="prize-head"><h2>⚽ Golden Boot</h2><span>${PRIZES.golden}</span></div>
+      <div class="prize-head"><h2>⚽ Prize 3 – Golden Boot</h2><span>${PRIZES.golden}</span></div>
       <div class="prize-main">${goldenLeader ? `${goldenLeader.name} • ${goldenLeader.goals} goals` : 'Waiting...'}</div>
       <div class="mini-list">${rows.slice(0, 3).map((r,i) => `<div>${medals[i] || i+1} ${r.name} — ${r.goals} goals / ${r.games} GP</div>`).join('')}</div>
     </section>
@@ -303,9 +312,12 @@ function renderBanter(rows, teams, banterLines = []) {
 }
 
 function renderScores(matches, teams) {
-  byId('scores').innerHTML = (matches || []).slice().reverse().map(m => `
-    <div class="score-row"><span>${teams[m.home]?.flag || ''} ${m.home} ${m.homeGoals} - ${m.awayGoals} ${m.away} ${teams[m.away]?.flag || ''}</span><strong>${normalizeStage(m.group) || m.group || m.status}</strong></div>
-  `).join('');
+  byId('scores').innerHTML = (matches || []).slice().reverse().map(m => {
+    const hp = Number(m.homePenalties ?? m.homePenaltyGoals ?? m.homePens);
+    const ap = Number(m.awayPenalties ?? m.awayPenaltyGoals ?? m.awayPens);
+    const pens = Number.isFinite(hp) && Number.isFinite(ap) ? ` (${hp}-${ap} pens)` : '';
+    return `<div class="score-row"><span>${teams[m.home]?.flag || ''} ${m.home} ${m.homeGoals} - ${m.awayGoals} ${m.away} ${teams[m.away]?.flag || ''}${pens}</span><strong>${normalizeStage(m.group || m.stage || m.round) || m.group || m.status}</strong></div>`;
+  }).join('');
 }
 
 function renderGroups(teams) {

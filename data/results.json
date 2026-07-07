@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-07T05:05:44.165Z",
+  "generatedAt": "2026-07-07T00:19:34.854Z",
   "players": [
     {
       "name": "Johnny",
@@ -1329,7 +1329,11 @@
       "away": "PAR",
       "homeGoals": 1,
       "awayGoals": 1,
-      "status": "FT"
+      "status": "FT",
+      "winner": "PAR",
+      "homePenalties": 3,
+      "awayPenalties": 4,
+      "stage": "R32"
     },
     {
       "id": "75",
@@ -1339,7 +1343,11 @@
       "away": "MAR",
       "homeGoals": 1,
       "awayGoals": 1,
-      "status": "FT"
+      "status": "FT",
+      "winner": "MAR",
+      "homePenalties": 2,
+      "awayPenalties": 3,
+      "stage": "R32"
     },
     {
       "id": "78",
@@ -1439,7 +1447,11 @@
       "away": "EGY",
       "homeGoals": 1,
       "awayGoals": 1,
-      "status": "FT"
+      "status": "FT",
+      "winner": "EGY",
+      "homePenalties": 2,
+      "awayPenalties": 4,
+      "stage": "R32"
     },
     {
       "id": "86",
@@ -1513,22 +1525,23 @@
     },
     {
       "id": "94",
-      "date": "07/06/2026 17:00",
+      "date": "07/06/2026 20:00",
       "group": "R16",
+      "stage": "R16",
       "home": "USA",
       "away": "BEL",
       "homeGoals": 1,
       "awayGoals": 4,
+      "winner": "BEL",
       "status": "FT"
     }
   ],
   "source": "https://worldcup26.ir/get/games",
   "sourceOk": true,
   "banter": [
-    "Nadine is currently pretending this was always part of the plan.",
+    "Nadine leads the Golden Boot race with 27 goals from 13 games.",
     "Mena owes 🇵🇹 POR a thank-you card at this point.",
-    "🇳🇴 NOR has quietly entered the “not so average” conversation for Nadine.",
+    "Nadine's average team, 🇳🇴 NOR, is doing suspiciously well.",
     "If your team has not played yet, congratulations: hope remains undefeated."
-  ],
-  "sourceError": null
+  ]
 }

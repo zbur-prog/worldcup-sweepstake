@@ -92,6 +92,22 @@ function scoreNumber(value) {
   return Number(value);
 }
 
+function penaltyNumber(...values) {
+  for (const value of values) {
+    const n = scoreNumber(value);
+    if (Number.isFinite(n)) return n;
+  }
+  return NaN;
+}
+
+function explicitWinnerCode(m) {
+  const raw = getFirst(m, [
+    'winner', 'winnerTeam', 'winner_team', 'winner_team_name_en', 'winner_team_name', 'winner_name',
+    'winnerCode', 'winner_code', 'winner_team_code', 'winning_team', 'winning_team_name_en', 'qualified', 'qualified_team', 'advances', 'advanced_team'
+  ]);
+  return asCode(raw);
+}
+
 function isTrueLike(value) {
   return ['true', '1', 'yes', 'y'].includes(String(value).trim().toLowerCase());
 }
@@ -123,14 +139,33 @@ function parseMatch(m) {
 
   if (!home || !away || !finished || !Number.isFinite(homeGoals) || !Number.isFinite(awayGoals)) return null;
 
+  const homePenalties = penaltyNumber(
+    getFirst(m, ['home_penalty', 'home_penalties', 'home_penalty_score', 'home_penalties_score', 'homePenaltyScore', 'homePenalties', 'homePenaltyGoals', 'home_pens', 'home_pks']),
+    getFirst(full, ['home_penalty', 'home_penalties', 'homePenaltyScore', 'homePenalties', 'homePens'])
+  );
+  const awayPenalties = penaltyNumber(
+    getFirst(m, ['away_penalty', 'away_penalties', 'away_penalty_score', 'away_penalties_score', 'awayPenaltyScore', 'awayPenalties', 'awayPenaltyGoals', 'away_pens', 'away_pks']),
+    getFirst(full, ['away_penalty', 'away_penalties', 'awayPenaltyScore', 'awayPenalties', 'awayPens'])
+  );
+  const penaltyWinner = Number.isFinite(homePenalties) && Number.isFinite(awayPenalties) && homePenalties !== awayPenalties
+    ? (homePenalties > awayPenalties ? home : away)
+    : null;
+  const winner = explicitWinnerCode(m) || penaltyWinner || (homeGoals > awayGoals ? home : awayGoals > homeGoals ? away : null);
+
+  const rawStage = getFirst(m, ['group', 'stage', 'round', 'round_name', 'match_round', 'phase']) || codeToGroup[home] || codeToGroup[away] || null;
+
   return {
     id: String(getFirst(m, ['id', '_id', 'game_id', 'match_id', 'fixture_id']) || `${home}-${away}`),
     date: getFirst(m, ['utcDate', 'date', 'datetime', 'start_time', 'kickoff', 'local_date']) || null,
-    group: getFirst(m, ['group']) || codeToGroup[home] || codeToGroup[away] || null,
+    group: rawStage,
+    stage: rawStage,
     home,
     away,
     homeGoals,
     awayGoals,
+    homePenalties: Number.isFinite(homePenalties) ? homePenalties : undefined,
+    awayPenalties: Number.isFinite(awayPenalties) ? awayPenalties : undefined,
+    winner,
     status: 'FT'
   };
 }
