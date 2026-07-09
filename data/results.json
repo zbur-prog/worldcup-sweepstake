@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-09T21:42:52.424Z",
+  "generatedAt": "2026-07-09T23:35:39.888Z",
   "players": [
     {
       "name": "Johnny",
@@ -177,10 +177,10 @@
     "FRA": {
       "name": "France",
       "flag": "🇫🇷",
-      "goalsFor": 14,
+      "goalsFor": 16,
       "goalsAgainst": 2,
-      "played": 5,
-      "points": 15,
+      "played": 6,
+      "points": 18,
       "group": "I"
     },
     "BEL": {
@@ -232,8 +232,8 @@
       "name": "Morocco",
       "flag": "🇲🇦",
       "goalsFor": 10,
-      "goalsAgainst": 4,
-      "played": 5,
+      "goalsAgainst": 6,
+      "played": 6,
       "points": 11,
       "group": "C"
     },
@@ -1740,15 +1740,27 @@
       "awayPenalties": 3,
       "winner": "SUI",
       "status": "FT"
+    },
+    {
+      "id": "97",
+      "date": "07/09/2026 16:00",
+      "group": "QF",
+      "stage": "QF",
+      "home": "FRA",
+      "away": "MAR",
+      "homeGoals": 2,
+      "awayGoals": 0,
+      "winner": "FRA",
+      "status": "FT"
     }
   ],
   "source": "https://worldcup26.ir/get/games",
   "sourceOk": true,
   "banter": [
-    "Nadine has moved into “checking the prize money” territory.",
-    "🇵🇹 POR is doing the heavy lifting while Mena's other teams enjoy the view.",
-    "🇳🇴 NOR has quietly entered the “not so average” conversation for Nadine.",
-    "The organiser accepts no responsibility for football, maths, or hurt feelings."
+    "Nadine has started acting like a tactical genius. We are monitoring the situation.",
+    "Mena owes 🇵🇹 POR a thank-you card at this point.",
+    "🇳🇴 NOR is making the Average Team prize look very spicy for Nadine.",
+    "If your team has not played yet, congratulations: hope remains undefeated."
   ],
   "sourceError": null
 }
