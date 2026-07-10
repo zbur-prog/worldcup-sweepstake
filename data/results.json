@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-10T20:42:13.260Z",
+  "generatedAt": "2026-07-10T22:14:42.219Z",
   "players": [
     {
       "name": "Johnny",
@@ -168,10 +168,10 @@
     "ESP": {
       "name": "Spain",
       "flag": "🇪🇸",
-      "goalsFor": 9,
-      "goalsAgainst": 0,
-      "played": 5,
-      "points": 13,
+      "goalsFor": 11,
+      "goalsAgainst": 1,
+      "played": 6,
+      "points": 16,
       "group": "H"
     },
     "FRA": {
@@ -186,9 +186,9 @@
     "BEL": {
       "name": "Belgium",
       "flag": "🇧🇪",
-      "goalsFor": 13,
-      "goalsAgainst": 5,
-      "played": 5,
+      "goalsFor": 14,
+      "goalsAgainst": 7,
+      "played": 6,
       "points": 11,
       "group": "G"
     },
@@ -1752,15 +1752,27 @@
       "awayGoals": 0,
       "winner": "FRA",
       "status": "FT"
+    },
+    {
+      "id": "98",
+      "date": "07/10/2026 12:00",
+      "group": "QF",
+      "stage": "QF",
+      "home": "ESP",
+      "away": "BEL",
+      "homeGoals": 2,
+      "awayGoals": 1,
+      "winner": "ESP",
+      "status": "FT"
     }
   ],
   "source": "https://worldcup26.ir/get/games",
   "sourceOk": true,
   "banter": [
-    "Nadine leads the Golden Boot race with 30 goals from 14 games.",
-    "🇵🇹 POR has put Mena's sweepstake campaign on its back.",
+    "Nadine is currently pretending this was always part of the plan.",
+    "Mena owes 🇵🇹 POR a thank-you card at this point.",
     "Nadine's average team, 🇳🇴 NOR, is doing suspiciously well.",
-    "The organiser accepts no responsibility for football, maths, or hurt feelings."
+    "VAR has reviewed the sweepstake and confirmed everyone should calm down."
   ],
   "sourceError": null
 }
