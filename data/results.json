@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-12T03:55:14.108Z",
+  "generatedAt": "2026-07-12T06:47:04.409Z",
   "players": [
     {
       "name": "Johnny",
@@ -150,10 +150,10 @@
     "ARG": {
       "name": "Argentina",
       "flag": "🇦🇷",
-      "goalsFor": 14,
-      "goalsAgainst": 5,
-      "played": 5,
-      "points": 15,
+      "goalsFor": 17,
+      "goalsAgainst": 6,
+      "played": 6,
+      "points": 18,
       "group": "J"
     },
     "ENG": {
@@ -303,9 +303,9 @@
     "SUI": {
       "name": "Switzerland",
       "flag": "🇨🇭",
-      "goalsFor": 9,
-      "goalsAgainst": 3,
-      "played": 5,
+      "goalsFor": 10,
+      "goalsAgainst": 6,
+      "played": 6,
       "points": 11,
       "group": "B"
     },
@@ -1776,15 +1776,27 @@
       "awayGoals": 2,
       "winner": "ENG",
       "status": "FT"
+    },
+    {
+      "id": "100",
+      "date": "07/11/2026 20:00",
+      "group": "QF",
+      "stage": "QF",
+      "home": "ARG",
+      "away": "SUI",
+      "homeGoals": 3,
+      "awayGoals": 1,
+      "winner": "ARG",
+      "status": "FT"
     }
   ],
   "source": "https://worldcup26.ir/get/games",
   "sourceOk": true,
   "banter": [
-    "Nadine has moved into “checking the prize money” territory.",
-    "🇵🇹 POR is responsible for 89% of Mena's goals. That is not teamwork, that is outsourcing.",
-    "Nadine may need to apologise to 🇳🇴 NOR for calling them average.",
-    "All complaints about the draw remain formally ignored."
+    "Nadine is top of the table and absolutely not being humble about it.",
+    "Mena owes 🇵🇹 POR a thank-you card at this point.",
+    "Nadine's average team, 🇳🇴 NOR, is doing suspiciously well.",
+    "If your team has not played yet, congratulations: hope remains undefeated."
   ],
   "sourceError": null
 }
