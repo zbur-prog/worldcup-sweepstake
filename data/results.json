@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-14T19:44:41.459Z",
+  "generatedAt": "2026-07-14T21:13:55.618Z",
   "players": [
     {
       "name": "Johnny",
@@ -168,18 +168,18 @@
     "ESP": {
       "name": "Spain",
       "flag": "🇪🇸",
-      "goalsFor": 11,
+      "goalsFor": 13,
       "goalsAgainst": 1,
-      "played": 6,
-      "points": 16,
+      "played": 7,
+      "points": 19,
       "group": "H"
     },
     "FRA": {
       "name": "France",
       "flag": "🇫🇷",
       "goalsFor": 16,
-      "goalsAgainst": 2,
-      "played": 6,
+      "goalsAgainst": 4,
+      "played": 7,
       "points": 18,
       "group": "I"
     },
@@ -1788,15 +1788,27 @@
       "awayGoals": 1,
       "winner": "ARG",
       "status": "FT"
+    },
+    {
+      "id": "101",
+      "date": "07/14/2026 14:00",
+      "group": "SF",
+      "stage": "SF",
+      "home": "FRA",
+      "away": "ESP",
+      "homeGoals": 0,
+      "awayGoals": 2,
+      "winner": "ESP",
+      "status": "FT"
     }
   ],
   "source": "https://worldcup26.ir/get/games",
   "sourceOk": true,
   "banter": [
-    "Nadine is top of the table and absolutely not being humble about it.",
-    "🇵🇹 POR is doing the heavy lifting while Mena's other teams enjoy the view.",
-    "Nadine may need to apologise to 🇳🇴 NOR for calling them average.",
-    "The organiser accepts no responsibility for football, maths, or hurt feelings."
+    "Nadine has moved into “checking the prize money” territory.",
+    "🇵🇹 POR is responsible for 89% of Mena's goals. That is not teamwork, that is outsourcing.",
+    "🇳🇴 NOR is making the Average Team prize look very spicy for Nadine.",
+    "All complaints about the draw remain formally ignored."
   ],
   "sourceError": null
 }
