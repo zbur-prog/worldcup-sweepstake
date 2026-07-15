@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-15T19:35:19.982Z",
+  "generatedAt": "2026-07-15T21:14:09.620Z",
   "players": [
     {
       "name": "Johnny",
@@ -150,18 +150,18 @@
     "ARG": {
       "name": "Argentina",
       "flag": "🇦🇷",
-      "goalsFor": 17,
-      "goalsAgainst": 6,
-      "played": 6,
-      "points": 18,
+      "goalsFor": 19,
+      "goalsAgainst": 7,
+      "played": 7,
+      "points": 21,
       "group": "J"
     },
     "ENG": {
       "name": "England",
       "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-      "goalsFor": 13,
-      "goalsAgainst": 6,
-      "played": 6,
+      "goalsFor": 14,
+      "goalsAgainst": 8,
+      "played": 7,
       "points": 16,
       "group": "L"
     },
@@ -1800,15 +1800,27 @@
       "awayGoals": 2,
       "winner": "ESP",
       "status": "FT"
+    },
+    {
+      "id": "102",
+      "date": "07/15/2026 15:00",
+      "group": "SF",
+      "stage": "SF",
+      "home": "ENG",
+      "away": "ARG",
+      "homeGoals": 1,
+      "awayGoals": 2,
+      "winner": "ARG",
+      "status": "FT"
     }
   ],
   "source": "https://worldcup26.ir/get/games",
   "sourceOk": true,
   "banter": [
-    "Nadine is top of the table and absolutely not being humble about it.",
-    "🇵🇹 POR has put Mena's sweepstake campaign on its back.",
-    "🇳🇴 NOR is making the Average Team prize look very spicy for Nadine.",
-    "This leaderboard is temporary, but the group chat abuse is forever."
+    "Nadine is currently pretending this was always part of the plan.",
+    "🇵🇹 POR is responsible for 89% of Mena's goals. That is not teamwork, that is outsourcing.",
+    "Nadine's average team, 🇳🇴 NOR, is doing suspiciously well.",
+    "All complaints about the draw remain formally ignored."
   ],
   "sourceError": null
 }
