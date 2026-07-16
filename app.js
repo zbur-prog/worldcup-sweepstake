@@ -267,16 +267,46 @@ function renderAverage(players, teams, teamStatus) {
 }
 
 function renderWinnerTable(players, teams, teamStatus) {
+
   const rows = players.map(p => {
-    const teamRows = [p.t1, p.t2, p.t3].map(c => ({ code: c, status: teamStatus[c], team: teams[c] }));
-    const best = [...teamRows].sort((a,b) => stageRank[b.status?.result || 'Grp'] - stageRank[a.status?.result || 'Grp'])[0];
-    const alive = teamRows.filter(x => x.status?.alive || x.status?.winner);
-    return { player: p.name, teamRows, best, aliveCount: alive.length };
-  }).sort((a,b) =>
-    b.aliveCount - a.aliveCount
-    || stageRank[b.best.status?.result || 'Grp'] - stageRank[a.best.status?.result || 'Grp']
-    || a.player.localeCompare(b.player)
-  );
+    const teamRows = [p.t1, p.t2, p.t3].map(c => ({
+      code: c,
+      status: teamStatus[c],
+      team: teams[c]
+    }));
+    const best = [...teamRows].sort((a, b) =>
+      stageRank[b.status?.result || 'Grp']
+      - stageRank[a.status?.result || 'Grp']
+    )[0];
+    const alive = teamRows.filter(x =>
+      x.status?.alive || x.status?.winner
+    );
+    return {
+      player: p.name,
+      teamRows,
+      best,
+      aliveCount: alive.length
+    };
+  }).sort((a, b) => {
+    const aT1 = a.teamRows[0];
+    const bT1 = b.teamRows[0];
+    const aT2 = a.teamRows[1];
+    const bT2 = b.teamRows[1];
+    const aT1Alive = aT1.status?.alive || aT1.status?.winner ? 1 : 0;
+    const bT1Alive = bT1.status?.alive || bT1.status?.winner ? 1 : 0;
+    return (
+      // 1. Tier 1 team still alive
+      bT1Alive - aT1Alive
+      // 2. Tier 1 team furthest round
+      || stageRank[bT1.status?.result || 'Grp']
+         - stageRank[aT1.status?.result || 'Grp']
+      // 3. Tier 2 team furthest round
+      || stageRank[bT2.status?.result || 'Grp']
+         - stageRank[aT2.status?.result || 'Grp']
+      // Final alphabetical tie-break
+      || a.player.localeCompare(b.player)
+    );
+  });
 
   byId('winnerBody').innerHTML = rows.map((r,i) => `
     <tr class="${r.aliveCount ? 'alive-row' : 'out-row'}">
