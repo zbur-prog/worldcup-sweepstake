@@ -156,7 +156,6 @@ function statusBadge(status) {
 
 function sortByPrizeStage(a, b) {
   return stageRank[b.result] - stageRank[a.result]
-    || pts(b.team) - pts(a.team)
     || gd(b.team) - gd(a.team)
     || gf(b.team) - gf(a.team)
     || a.player.localeCompare(b.player);
