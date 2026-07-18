@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-18T22:06:12.222Z",
+  "generatedAt": "2026-07-18T23:09:14.622Z",
   "players": [
     {
       "name": "Johnny",
@@ -159,10 +159,10 @@
     "ENG": {
       "name": "England",
       "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-      "goalsFor": 14,
-      "goalsAgainst": 8,
-      "played": 7,
-      "points": 16,
+      "goalsFor": 20,
+      "goalsAgainst": 12,
+      "played": 8,
+      "points": 19,
       "group": "L"
     },
     "ESP": {
@@ -177,9 +177,9 @@
     "FRA": {
       "name": "France",
       "flag": "🇫🇷",
-      "goalsFor": 16,
-      "goalsAgainst": 4,
-      "played": 7,
+      "goalsFor": 20,
+      "goalsAgainst": 10,
+      "played": 8,
       "points": 18,
       "group": "I"
     },
@@ -1812,15 +1812,27 @@
       "awayGoals": 2,
       "winner": "ARG",
       "status": "FT"
+    },
+    {
+      "id": "103",
+      "date": "07/18/2026 17:00",
+      "group": "3RD",
+      "stage": "3RD",
+      "home": "FRA",
+      "away": "ENG",
+      "homeGoals": 4,
+      "awayGoals": 6,
+      "winner": "ENG",
+      "status": "FT"
     }
   ],
   "source": "https://worldcup26.ir/get/games",
   "sourceOk": true,
   "banter": [
-    "Nadine has moved into “checking the prize money” territory.",
-    "🇵🇹 POR has put Mena's sweepstake campaign on its back.",
-    "Nadine's average team, 🇳🇴 NOR, is doing suspiciously well.",
-    "This leaderboard is temporary, but the group chat abuse is forever."
+    "Nadine is top of the table and absolutely not being humble about it.",
+    "🇵🇹 POR is doing the heavy lifting while Mena's other teams enjoy the view.",
+    "🇳🇴 NOR is making the Average Team prize look very spicy for Nadine.",
+    "The organiser accepts no responsibility for football, maths, or hurt feelings."
   ],
   "sourceError": null
 }
