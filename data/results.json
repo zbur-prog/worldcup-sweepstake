@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-19T21:06:11.765Z",
+  "generatedAt": "2026-07-19T22:08:01.244Z",
   "players": [
     {
       "name": "Johnny",
@@ -151,8 +151,8 @@
       "name": "Argentina",
       "flag": "🇦🇷",
       "goalsFor": 19,
-      "goalsAgainst": 7,
-      "played": 7,
+      "goalsAgainst": 8,
+      "played": 8,
       "points": 21,
       "group": "J"
     },
@@ -168,10 +168,10 @@
     "ESP": {
       "name": "Spain",
       "flag": "🇪🇸",
-      "goalsFor": 13,
+      "goalsFor": 14,
       "goalsAgainst": 1,
-      "played": 7,
-      "points": 19,
+      "played": 8,
+      "points": 22,
       "group": "H"
     },
     "FRA": {
@@ -1824,15 +1824,27 @@
       "awayGoals": 6,
       "winner": "ENG",
       "status": "FT"
+    },
+    {
+      "id": "104",
+      "date": "07/19/2026 15:00",
+      "group": "FINAL",
+      "stage": "FINAL",
+      "home": "ESP",
+      "away": "ARG",
+      "homeGoals": 1,
+      "awayGoals": 0,
+      "winner": "ESP",
+      "status": "FT"
     }
   ],
   "source": "https://worldcup26.ir/get/games",
   "sourceOk": true,
   "banter": [
-    "Nadine is currently pretending this was always part of the plan.",
-    "Mena owes 🇵🇹 POR a thank-you card at this point.",
-    "Nadine's average team, 🇳🇴 NOR, is doing suspiciously well.",
-    "If your team has not played yet, congratulations: hope remains undefeated."
+    "Nadine has started acting like a tactical genius. We are monitoring the situation.",
+    "🇵🇹 POR is carrying Mena harder than airport luggage.",
+    "🇳🇴 NOR has quietly entered the “not so average” conversation for Nadine.",
+    "VAR has reviewed the sweepstake and confirmed everyone should calm down."
   ],
   "sourceError": null
 }
