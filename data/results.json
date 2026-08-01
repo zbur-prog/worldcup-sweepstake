@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-01T19:31:54.342Z",
+  "generatedAt": "2026-08-01T21:08:06.569Z",
   "players": [
     {
       "name": "Johnny",
@@ -1839,12 +1839,12 @@
     }
   ],
   "source": "https://worldcup26.ir/get/games",
-  "sourceOk": true,
+  "sourceOk": false,
   "banter": [
     "Nadine has moved into “checking the prize money” territory.",
     "🇵🇹 POR has put Mena's sweepstake campaign on its back.",
     "🇳🇴 NOR has quietly entered the “not so average” conversation for Nadine.",
     "The organiser accepts no responsibility for football, maths, or hurt feelings."
   ],
-  "sourceError": null
+  "sourceError": "HTTP 404"
 }
