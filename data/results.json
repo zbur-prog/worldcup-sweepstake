@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T07:36:20.924Z",
+  "generatedAt": "2026-10-21T13:45:31.320Z",
   "players": [
     {
       "name": "Johnny",
@@ -1846,5 +1846,5 @@
     "🇳🇴 NOR has quietly entered the “not so average” conversation for Nadine.",
     "The organiser accepts no responsibility for football, maths, or hurt feelings."
   ],
-  "sourceError": "fetch failed"
+  "sourceError": "HTTP 404"
 }
